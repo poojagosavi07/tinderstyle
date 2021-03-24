@@ -1,0 +1,53 @@
+<!-- Back button with a default href -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>OTP Verification</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="acc-rec-no">
+    <ion-grid class="btn-sty">
+      <ion-row class="lbl">
+        <ion-label>Enter OTP here</ion-label><br><br>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card class="slot1">
+            <ion-input></ion-input>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="slot1">
+            <ion-input></ion-input>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="slot1">
+            <ion-input></ion-input>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="slot1">
+            <ion-input></ion-input>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+        <ion-button routerLink='../login' color="danger" class="btn" fill="outline" expand="block">Verify</ion-button>
+      </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+  </div>
+
+</ion-content>

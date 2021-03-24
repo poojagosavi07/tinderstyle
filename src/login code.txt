@@ -1,0 +1,158 @@
+
+
+
+<ion-content padding class="style-grid">
+
+    <ion-grid class="btn-sty">
+
+      <ion-row style="text-align: center;">
+        <ion-col style="text-align: center;">
+          <ion-item>
+            <ion-label type="text" position="floating" >
+              <!-- <ion-icon name="person-outline"></ion-icon> -->
+              Username</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="text-align: center;">
+        <ion-col>
+          <ion-item>
+            <ion-label type="password" position="floating">
+              <!-- <ion-icon name="lock-closed-outline"></ion-icon> -->
+              Password</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="text-align: center;">
+        <ion-col>
+          <ion-button expand="block" (click)="signin" fill="outline" >signin</ion-button>
+          <!-- <ion-button class="for-pass" expand="block"  fill="outline"style="width: 220px;border-radius: 15px;">Sign In</ion-button> -->
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row style="text-align: center;" >
+        <ion-col>
+            <a (click)="forgetPassword()" href="#" style="text-align: center;float: left;">Forget Password?</a>
+        </ion-col>
+      </ion-row>
+
+     
+      <ion-row style="text-align: center;">
+        <ion-col>
+          <ion-label style="font-weight: bold;margin-top: 100px;">OR</ion-label> 
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="text-align: center;margin-left: 30px ;">
+        <ion-col>
+          <a (click)="loginFacebook()" href="#" style="text-align: center;float: left;text-decoration: none;">
+            <ion-icon name="logo-facebook" style="font-size: 25px;"></ion-icon>Continue with Facebook
+          </a>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+        <a (click)="loginGoogle()" href="#" style="text-align: center;float: left;text-decoration: none;">
+          <ion-icon name="logo-google" slot="end"></ion-icon>Continue with Google
+        </a>
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+        <a (click)="newRegister()" href="#" style="text-align: center;float: left;text-decoration: none;">New User.Register here
+        </a>
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item lines="none">
+            <ion-label class="for-pass" style="margin-left: 80px;"><a href="#" style="text-align: center;">Trouble Logging In?</a></ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+
+</ion-content>
+
+
+<ion-grid class="btn-sty">
+      <ion-row style="text-align: center;">
+        <ion-col>
+          <ion-button expand="block" (click)="signin" fill="outline" >signin</ion-button>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row style="text-align: center;" >
+        <ion-col>
+            <a (click)="forgetPassword()" href="#" style="text-align: center;float: left;">Forget Password?</a>
+        </ion-col>
+      </ion-row>
+    
+     
+      <ion-row style="text-align: center;">
+        <ion-col>
+          <ion-label style="font-weight: bold;margin-top: 100px;">OR</ion-label> 
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="text-align: center;margin-left: 30px ;">
+        <ion-col>
+          <a (click)="loginFacebook()" href="#" style="text-align: center;float: left;text-decoration: none;">
+            <ion-icon name="logo-facebook" style="font-size: 25px;"></ion-icon>Continue with Facebook
+          </a>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+        <a (click)="loginGoogle()" href="#" style="text-align: center;float: left;text-decoration: none;">
+          <ion-icon name="logo-google" slot="end"></ion-icon>Continue with Google
+        </a>
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+        <a (click)="newRegister()" href="#" style="text-align: center;float: left;text-decoration: none;">New User.Register here
+        </a>
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item lines="none">
+            <ion-label class="for-pass" style="margin-left: 80px;"><a href="#" style="text-align: center;">Trouble Logging In?</a></ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+
+  <ion-grid class="btn-sty">
+
+    <ion-row class="signin-sty">
+      <ion-col>
+        <ion-button expand="block" (click)="signin" fill="outline">Sign-In</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row style="text-align: center;">
+      <ion-col>
+        <a (click)="forgetPassword()" href="#" style="text-align: center;float: left;">Forget Password?</a>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>

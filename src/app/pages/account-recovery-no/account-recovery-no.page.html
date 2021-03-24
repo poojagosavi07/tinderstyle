@@ -1,0 +1,53 @@
+<!-- Back button with a default href -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Account Recovery</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" routerLink='../account-recovery'></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="acc-rec-no">
+    <ion-grid class="btn-sty">
+      <ion-row>
+        <ion-col>
+          <ion-label style="font-weight: bold;font-size: 18px;color: black;text-align: center;padding: 10px;">Enter your phone number<br>
+          to get OTP</ion-label><br><br>
+          <small>This OTP will be valid upto 40 minutes only.</small>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+
+        <ion-col size="3">
+          <ion-item lines="none">
+            <ion-select value="+91" okText="Okay" placeholder="+91" cancelText="Dismiss" style="width: 70px;">
+              <ion-select-option value="India">+91</ion-select-option>
+              <ion-select-option value="Pakistan">+92</ion-select-option>
+              <ion-select-option value="United States">+1</ion-select-option>
+              <ion-select-option value="South Korea">+82</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+        </ion-col>
+
+        <ion-col>
+          <ion-input style="font-size: 17px;" type="number" placeholder="Enter number"
+             name="userCount"></ion-input>
+        </ion-col>
+      
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button routerLink='../otp-verification' expand="block" fill="outline" color="danger">Send OTP</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+</ion-content>

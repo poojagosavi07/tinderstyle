@@ -1,0 +1,43 @@
+<!-- Back button with a default href -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Account Recovery</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" routerLink='../login'></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+    <ion-item lines="none">
+      <ion-toolbar>
+        <ion-title style="font-size: 18px;font-weight: bold;">Account Recovery</ion-title>
+        
+      </ion-toolbar>
+    </ion-item>
+
+    <ion-item lines="none">
+      <small style="text-align: center;"> Click the link in the reset and enter a new password when prompted.</small>
+    </ion-item>
+
+    <ion-grid class="btn-sty">
+
+      <ion-row>
+        <ion-col>
+          <ion-button routerLink='../account-recovery-mail' color="danger" expand="block" fill="outline">Reset Using Mail
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button routerLink='../account-recovery-no' color="danger" expand="block" fill="outline">Reset Using Phone No
+
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+</ion-content>

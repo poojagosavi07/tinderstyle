@@ -1,0 +1,32 @@
+.next-arrow
+{
+        font-size: 64px;
+        vertical-align: middle;
+}
+
+ion-card{
+        ion-card-subtitle{
+                color: #f53d3d;
+                
+                font-weight: bold;
+        }       
+}
+
+ion-select{
+width: 100%;
+}
+
+ion-button{
+        border: 0 !important;
+        --border-width: 0px;
+        height: 35px;
+        float: right;
+        ion-icon{
+                color: #f53d3d;
+                font-size: 40px;
+        }
+}
+
+*{
+        font-family: 'Times New Roman', Times, serif;
+    }

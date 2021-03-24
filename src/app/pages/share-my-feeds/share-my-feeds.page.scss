@@ -1,0 +1,20 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+
+.lbl{
+    color: black;
+}
+
+// ion-toggle {
+//     --handle-background-checked: #fff url(https://ionicframework.com/docs/demos/api/avatar/avatar.svg) no-repeat center / contain;
+//   }
+
+  .lbl {
+    // --handle-spacing: 0px;
+    --handle-height: 100%;
+    --handle-box-shadow: 4px 0 2px 0 #f53d3d;
+ 
+  }

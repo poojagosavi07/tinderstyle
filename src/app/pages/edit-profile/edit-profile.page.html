@@ -1,0 +1,65 @@
+<!-- Back button with a default href -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Edit Profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab6"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content no-scroll>
+
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-subtitle>Who you are looking?</ion-card-subtitle>
+    </ion-card-header>
+    <ion-item lines="none">
+      <!-- <ion-label style="color: #f53d3d;font-size: 18px;font-weight: bold;">Who you are looking?</ion-label> -->
+      <ion-select class="custom-options" placeholder="Select Gender">
+        <ion-select-option value="men">Men</ion-select-option>
+        <ion-select-option value="women">Women</ion-select-option>
+        <ion-select-option value="other">Others</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Birthdate</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-datetime displayFormat="DD/MM/YYYY" placeholder="DOB"></ion-datetime>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Location</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-subtitle position="floating">Bio</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-textarea></ion-textarea>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button color="danger" routerLink='../login' class="next-arrow"
+    expand="expand" shape="round" fill="outline">
+    <ion-icon float-right name="arrow-forward-circle-outline"></ion-icon>
+  </ion-button>
+</ion-content>

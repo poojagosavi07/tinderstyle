@@ -1,0 +1,8 @@
+{
+  "name": "TinderStyleDemo",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

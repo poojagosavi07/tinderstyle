@@ -1,0 +1,93 @@
+<ion-content class="style-grid">
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col style="text-align: center;">
+        <ion-item lines="none">
+          <ion-input class="row-style" type="text" placeholder="Username">
+            <ion-icon style="float: left;color: black;font-size:
+              large;margin-left: 10px;" name="person-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-input class="row-style" type="password" placeholder="Password">
+            <ion-icon style="float: left;color: black;font-size:
+              large;margin-left: 10px;" name="lock-closed-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-label>Remember Me</ion-label>
+          <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+          <a routerLink='../account-recovery'>Forget Password?</a>
+        </ion-item>
+      </ion-col>
+
+      <!-- <ion-col>
+        <ion-item lines="none">
+          <a href="#">Forget Password?</a>
+        </ion-item>
+      </ion-col> -->
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button expand="expand" shape="round" (click)="tryLogin()" routerLink='/tabs/tab7'
+          fill="outline">Login</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Dont have Account! </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="light" routerLink='../register' class="next-arrow"
+        expand="expand" shape="round" 
+        fill="outline" style="border: 0 !important;--border-width: 0">
+        <a>Register Here!</a>
+      </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>OR</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Continue With</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div class="logo-style">
+          <span><ion-icon class="fb-sty" name="logo-facebook"></ion-icon></span>
+          <span><ion-icon class="google-sty" name="logo-google"></ion-icon></span>
+          <span><ion-icon class="tw-sty" name="logo-twitter"></ion-icon></span>
+          <span><ion-icon class="linked-sty" name="logo-linkedin"></ion-icon></span>
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+
+</ion-content>

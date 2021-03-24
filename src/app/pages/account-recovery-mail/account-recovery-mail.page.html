@@ -1,0 +1,43 @@
+<!-- Back button with a default href -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Account Recovery</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" routerLink='../account-recovery'></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="mail-rec-sty">
+    <ion-grid class="btn-sty">
+
+      <ion-row>
+        <ion-col>
+          <ion-label style="font-size: 18px;color: black;">Enter your Email ID here<br><br>
+            to get OTP<br><br>
+            <small>This OTP will be valid upto 40 minutes only.</small><br>
+          </ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+
+          <ion-input style="font-size: 17px;color: black;"
+            placeholder="Enter email here..." type="email" required></ion-input>
+
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button routerLink='../otp-verification' expand="block" fill="outline" color="danger">Send OTP</ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+  </div>
+</ion-content>

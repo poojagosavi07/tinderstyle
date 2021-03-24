@@ -1,0 +1,27 @@
+ion-toggle {
+
+    // --handle-background-checked: #fff url('../../../assets/img/m1.png') no-repeat center / contain;
+    --background: pink;
+   
+
+    // --handle-background: #fff url('../../../assets/img/w1.png') no-repeat center / contain;
+    --background-checked: lightblue;
+    // --background: orange;
+    // --handle-background: navy;
+
+    // --background-checked: darkgreen;
+    // --handle-background-checked: khaki;
+}
+
+.vl {
+    border-left: 3px solid rgb(221, 42, 42);
+    opacity: 1;
+    box-shadow: rgb(221, 42, 42);
+    height: 200px;
+  }
+
+  .g-class
+  {
+      margin-top: 180px;
+  }
+

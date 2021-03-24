@@ -1,0 +1,52 @@
+<!-- Back button with a default href -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Gender Selection</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="g-class">
+
+    <ion-card-header>
+      <ion-card-title style="color: #f53d3d;font-size: 18px;font-weight: bold;" position="floating">Gender
+      </ion-card-title>
+    </ion-card-header>
+   
+    <ion-item lines="none">
+      <ion-grid>
+
+        <ion-row>
+          <ion-col class="male-side">
+            <!-- <span><img src="../../../assets/img/male1.jpg" style="height: 150px;width: 120px;" /></span> -->
+            <ion-label>Male</ion-label>
+          </ion-col>
+          <div class="vl"></div>
+          <ion-col class="female-side">
+            <!-- <span><img src="../../../assets/img/female1.jpg" style="height: 150px;width: 120px;" /> </span> -->
+            <ion-label>Female</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <!-- </ion-card-content> -->
+
+      <!-- </ion-card> -->
+    </ion-item>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="ion-text-end">
+          <ion-icon class="next-arrow" float-right  name="arrow-forward-circle-sharp" size="large"
+        style="color: #f53d3d;font-size: 15px;"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,128 @@
+<ion-content>
+  <ion-list>
+    <div class="">
+
+      <!-- <ion-item lines="none">
+              <span>
+                <ion-avatar class="avatar">
+                  <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
+                </ion-avatar>
+              </span>
+              <ion-input type="file"></ion-input>
+       
+      </ion-item> -->
+
+      <div  class="card-avatar">
+        <div class="img-wrapper">
+          <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
+          <ion-button color="light">
+            <ion-icon slot="icon-only" name="camera-outline" color="medium">
+            </ion-icon>
+          </ion-button>
+        </div>
+        
+      </div>
+
+      <ion-card>
+
+        <ion-grid>
+
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label position="floating">First Name</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+
+            <ion-col>
+              <ion-item >
+                <ion-label position="floating">Last Name</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+       
+        <ion-item>
+          <ion-label position="floating">Contact No.</ion-label>
+          <ion-input ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Location</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>  
+
+      </ion-card>
+
+      <ion-card>
+        <ion-radio-group value="gender" >
+          <!-- <ion-list-header>
+            <ion-label class="head">Gender</ion-label>
+          </ion-list-header> -->
+          <ion-item lines="none">
+            <ion-label>Female</ion-label>
+            <ion-radio slot="end" color="danger" value="female"></ion-radio>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label>Male</ion-label>
+            <ion-radio slot="end" color="danger" value="male"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-card>
+
+      <ion-card>
+        <ion-item>
+          <ion-label position="floating">Birthdate</ion-label>
+          <ion-datetime></ion-datetime>
+        </ion-item>
+      </ion-card>
+
+    <ion-card>
+        <ion-item>
+          <ion-label position="floating">Bio</ion-label>
+          <ion-textarea></ion-textarea>
+        </ion-item>
+
+      </ion-card>
+
+      <ion-card style="margin-bottom: 10px;">
+        <ion-item>
+          <ion-label position="floating">Password
+          </ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Confirm Password
+          </ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+
+      </ion-card>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-end">
+              <ion-button color="light" routerLink='../login' class="next-arrow" expand="expand" shape="round" (click)="goToRegister()"
+              fill="outline" style="border: 0 !important;--border-width: 0">
+              <ion-icon float-right name="arrow-forward-circle-outline" 
+                style="color: #f53d3d;font-size: 45px;"></ion-icon>
+                
+            </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+   
+  </ion-list>
+</ion-content>

@@ -48,11 +48,10 @@
   </ion-item>
 
 </ion-content> -->
-
 <ion-content [fullscreen]="true">
   <ion-list no-padding>
-    <ion-item *ngFor="let chat of chatData" 
-    routerLink="/pages/chat" routerDirection="forward" >
+    <ion-item *ngFor="let chat of chatData"
+      routerLink="/pages/chat" routerDirection="forward">
       <ion-avatar class="chatImage" slot="start">
         <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
       </ion-avatar>
@@ -73,10 +72,9 @@
     </ion-item>
   </ion-list>
 
- 
-    <ion-button color="light">
-      <ion-label class="label"><h2 class="head">Login</h2></ion-label>
 
-    </ion-button>
-   
-</ion-content>
+  <ion-button color="light">
+    <ion-label class="label"><h2 class="head">Login</h2></ion-label>
+  </ion-button>
+
+  </ion-content>

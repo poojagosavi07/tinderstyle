@@ -93,17 +93,17 @@
 
 
   
-  .multi-button h2
+ .head
 {
-    position: relative;
-    margin: 8px 25px 46px;
+    position: absolute;
+    // margin: 8px 25px 46px;
     text-align: center;
     background-color: #e0e5ec;
     border-radius: 16px;
     border: none;
     box-shadow: 9px 9px 16px rgb(163,177,198,0.6),
                  -9px -9px 16px rgba(255,255,255,0.5);
-    width: 500px;
+    width: 40px;
     height: 90px;
     font-family: 600;
     color: rgb(78,78,78);
@@ -111,7 +111,7 @@
     line-height: 78px;
 }
 
-.multi-button h2:active:hover{
+.head:active:hover{
     box-shadow:inset 9px 9px 16px rgb(163,177,198,0.6),
                 inset -9px -9px 16px rgba(255,255,255,0.5);
 }
@@ -132,6 +132,7 @@ button
     outline: none;  
     border-radius: 16px;           
 }
+
 button:after
 {
     content: "";

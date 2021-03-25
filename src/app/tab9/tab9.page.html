@@ -48,6 +48,7 @@
   </ion-item>
 
 </ion-content> -->
+
 <ion-content [fullscreen]="true">
   <ion-list no-padding>
     <ion-item *ngFor="let chat of chatData"
@@ -72,9 +73,25 @@
     </ion-item>
   </ion-list>
 
-
-  <ion-button color="light">
-    <ion-label class="label"><h2 class="head">Login</h2></ion-label>
-  </ion-button>
-
+  <div class="container">
+    <button class="btn play">
+      <div class="icon-container">
+       <ion-label>Login</ion-label>
+      </div>
+    
+    </button>
+    </div>
   </ion-content>
+
+<script>
+  console.clear();
+
+const buttons = Array.from(document.querySelectorAll("button"));
+
+buttons.forEach(btn => {
+	btn.addEventListener("click", () => {
+		btn.classList.toggle("active");
+	});
+});
+
+</script>

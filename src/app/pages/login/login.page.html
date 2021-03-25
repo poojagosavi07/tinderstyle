@@ -45,9 +45,8 @@
         <!-- <ion-button expand="expand" shape="round" (click)="tryLogin()" routerLink='/tabs/tab7'
           fill="outline">Login</ion-button> -->
 
-          <div class="container">
-            <button type="button" expand="expand" shape="round" routerLink='/tabs/tab7'
-            fill="outline" class="my-5 btn neumorphic-btn">Login</button>
+          <div class="container cont">
+            <button type="button" routerLink='/tabs/tab7' class="neumorphic-btn">Login</button>
            
             </div>
       </ion-col>
@@ -61,10 +60,9 @@
 
     <ion-row>
       <ion-col>
-        <ion-button color="light" routerLink='../register' class="next-arrow"
-        expand="expand" shape="round" 
-        fill="outline" style="border: 0 !important;--border-width: 0">
-        <a>Register Here!</a>
+        <ion-button color="light" routerLink='../register'
+        expand="expand" shape="round" fill="outline" style="border: 0 !important;--border-width: 0">
+       <ion-label class="lbl-reg">Register Here!</ion-label>
       </ion-button>
       </ion-col>
     </ion-row>
@@ -78,11 +76,10 @@
     <ion-row>
       <ion-col >
         <div class="btn_wrap">
-          <span class="span">Continue with
+          <ion-label class="span">Continue with
             <ion-icon name="arrow-forward-sharp"></ion-icon>
-          </span>
-          <div class="container">
-      
+          </ion-label>
+          <div class="container1">
             <i><ion-icon class="fb-sty" name="logo-facebook"></ion-icon></i>
             <i><ion-icon class="google-sty" name="logo-google"></ion-icon></i>
             <i><ion-icon class="tw-sty" name="logo-twitter"></ion-icon></i>

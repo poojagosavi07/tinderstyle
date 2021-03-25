@@ -12,41 +12,45 @@
     </div>
   </sw-card-wrapper>
 
-  <div class="button_box">
+  <!-- <div class="button_box">
    
-     <!--Rewind-->
+    
      <ion-button  mode="ios" class="small_button" shape="round" fill="outline"> 
         <ion-icon name="refresh-outline" style="color: #f53d3d;"></ion-icon>
       </ion-button>
 
     <div class="space"></div>
 
-    <!--Dislike-->
     <ion-button (click)="onDisLike()" class="small_button" mode="ios" shape="round" fill="outline">
       <ion-icon name="heart-dislike-outline" style="color: #f53d3d;"></ion-icon>
     </ion-button>
 
     <div class="space"></div>
 
-     <!--Like-->
     <ion-button  (click)="onLike()" class="small_button" mode="ios" shape="round" fill="outline">
       <ion-icon name="heart-sharp" style="color: #f53d3d;"></ion-icon>
     </ion-button>
    
     <div class="space"></div>
 
-    <!--Follow-->
     <ion-button  mode="ios" class="small_button" shape="round" fill="outline">
       <ion-icon name="square-outline" style="color: #f53d3d;"></ion-icon>
     </ion-button>
 
     <div class="space"></div>
 
-      <!-- Super Like -->
       <ion-button mode="ios"  class="small_button" shape="round" fill="outline">
         <ion-icon style="color: #f53d3d;" name="star-outline"></ion-icon>
       </ion-button>
     
-  </div>
+  </div> -->
 
+  <div class="multi-button">
+  
+    <button> <ion-icon name="refresh-outline" style="color: #f53d3d;"></ion-icon></button>
+    <button (click)="onDisLike()"><ion-icon name="heart-dislike-outline" style="color: #f53d3d;"></ion-icon></button>
+    <button (click)="onLike()"> <ion-icon name="heart-sharp" style="color: #f53d3d;"></ion-icon></button>
+    <button><ion-icon name="square-outline" style="color: #f53d3d;"></ion-icon></button>
+    <button><ion-icon style="color: #f53d3d;" name="star-outline"></ion-icon></button>
+</div>
 </ion-content>

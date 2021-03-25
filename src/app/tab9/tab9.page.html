@@ -73,25 +73,13 @@
     </ion-item>
   </ion-list>
 
-  <div class="container">
-    <button class="btn play">
-      <div class="icon-container">
-       <ion-label>Login</ion-label>
-      </div>
-    
-    </button>
-    </div>
+  <div class="multi-button">
+  
+    <button><i class="fab fa-dribbble"></i></button>
+    <button><i class="fab fa-android"></i></button>
+    <button><i class="fab fa-github"></i></button>
+    <button><i class="fab fa-youtube"></i></button>
+
+</div>
+  
   </ion-content>
-
-<script>
-  console.clear();
-
-const buttons = Array.from(document.querySelectorAll("button"));
-
-buttons.forEach(btn => {
-	btn.addEventListener("click", () => {
-		btn.classList.toggle("active");
-	});
-});
-
-</script>

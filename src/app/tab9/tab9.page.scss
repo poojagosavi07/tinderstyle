@@ -93,29 +93,7 @@
 
 
   
- .head
-{
-    position: absolute;
-    // margin: 8px 25px 46px;
-    text-align: center;
-    background-color: #e0e5ec;
-    border-radius: 16px;
-    border: none;
-    box-shadow: 9px 9px 16px rgb(163,177,198,0.6),
-                 -9px -9px 16px rgba(255,255,255,0.5);
-    width: 40px;
-    height: 90px;
-    font-family: 600;
-    color: rgb(78,78,78);
-    font-family: sans-serif;
-    line-height: 78px;
-}
-
-.head:active:hover{
-    box-shadow:inset 9px 9px 16px rgb(163,177,198,0.6),
-                inset -9px -9px 16px rgba(255,255,255,0.5);
-}
-
+ 
 
 button
 {
@@ -124,23 +102,23 @@ button
     border: none;
     box-shadow: 9px 9px 16px rgb(163,177,198,0.6),
                  -9px -9px 16px rgba(255,255,255,0.5);
-    height: 96px;
-    width: 96px;
-    margin-bottom: 48px;
-    margin-right: 48px;
+    height: 60x;
+    width:80px;
+    // margin-bottom: 48px;
+    // margin-right: 48px;
     overflow: hidden;
     outline: none;  
-    border-radius: 16px;           
+    border-radius: 30px;           
 }
 
 button:after
 {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 100%;
+    // top: 0;
+    // left: 0;
+    // width: 200%;
+    // height: 100%;
     opacity: 0;
     transform: translateX(-100%);
     background: rgba(255, 255, 255, 0.13);

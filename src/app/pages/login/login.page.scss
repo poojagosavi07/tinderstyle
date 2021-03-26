@@ -190,18 +190,6 @@ ion-card{
        .btn_wrap{
        margin-left: -15%;
    }
-
-   #content2::before{
-    content: "\a";
-    white-space: pre-line;
-}
-   span.con2::before{
-    content: "\a\a";
-    white-space: pre-line;
-    word-break: break-all;
-
-   }
-
     }
 
 /*for ipad */

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,private socialSharing: SocialSharing) { }
 
   ngOnInit() {
   }
@@ -20,4 +21,9 @@ export class LoginPage implements OnInit {
     this.router.navigate(['/register']);
 
   }
+
+  sendShare(message, subject, url) {
+    this.socialSharing.share(message, subject, null, url);
+  }  // End of fu
+  
 }

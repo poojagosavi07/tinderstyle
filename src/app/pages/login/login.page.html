@@ -27,9 +27,11 @@
     <ion-row>
       <ion-col>
         <ion-item lines="none">
-          <ion-label>Remember Me</ion-label>
+          <span id="content1"><ion-label class="lbl-rem" >Remember Me</ion-label></span>
           <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
-          <a routerLink='../account-recovery'>Forget Password?</a>
+        
+        <span id="content2"><a routerLink='../account-recovery'>Forget Password?</a></span>
+         
         </ion-item>
       </ion-col>
 
@@ -65,9 +67,7 @@
     <ion-row>
       <ion-col>
         <div class="btn_wrap">
-          <ion-label class="span">Continue with
-            <ion-icon name="arrow-forward-sharp"></ion-icon>
-          </ion-label>
+          <ion-label class="span">Continue with</ion-label>
           <div class="container1">
             <i><ion-icon class="fb-sty" name="logo-facebook"></ion-icon></i>
             <i><ion-icon class="google-sty" name="logo-google"></ion-icon></i>

@@ -37,4 +37,6 @@ export class Tab9Page implements OnInit {
   onShow(chat) {
     this.route.navigate(['bubble', chat]);
   }
+
+  
 }

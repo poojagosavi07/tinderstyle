@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Fri Mar 26 2021 11:06:12 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/pages/login/login.page.html
+* src/app/pages/login/login.page.scss
+* src/app/tab7/tab7.page.html
+* src/app/tab7/tab7.page.scss
+* src/app/tab9/tab9.page.html
+* src/app/tab9/tab9.page.scss
+* src/app/tab9/tab9.page.ts
+
+
+Created files:
+* .autogit/logs/log-25-2-2021-18-14-37.txt
+
+
+Deleted files:
+
+
+Renamed files:

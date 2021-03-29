@@ -131,12 +131,7 @@ ion-button{
     text-align: center;
 }
 
-ion-card{
-    height: 400px;
-    width: 400px;
-    text-align: center;
-    padding-left: 10px;
-}
+
 
 /*for iphone 6/7/8 plus*/
 @media(max-width:414px) and (max-height:736px){
@@ -186,7 +181,7 @@ ion-card{
            }
          
     .btn_wrap{
-    margin-left: 0%;
+    margin-left: 3%;
 }}
 
 
@@ -202,7 +197,14 @@ ion-card{
               }
             
        .btn_wrap{
-       margin-left: -15%;
+       margin-left:-2%;
+   }
+
+   .card{
+       top: 10%;
+       height: 430px;
+       width: 290px;
+       left:6%;
    }
     }
 
@@ -456,8 +458,8 @@ html {
 
 .card {
   background-color: #fff;
-  width: 320px;
-  height: 430px;
+  width: auto;
+  height: auto;
   position: absolute;
 //   left: 10%;
 //   top: 5%;

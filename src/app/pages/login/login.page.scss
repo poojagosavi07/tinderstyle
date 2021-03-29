@@ -2,6 +2,9 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     font-weight: normal;
+    color: white;
+    // background-color:#1e2833;
+    // background-color: ;
 }
 
 
@@ -148,7 +151,7 @@ ion-card{
     }
     .card{
         top: 20%;
-        left: 25%;
+        left: 10%;
     }
 
      }
@@ -557,15 +560,15 @@ label:active{
 
 
 input[type="submit"] {
-  background-color: #f53d3d;
+//   background-color: #f53d3d;
   border: none;
-  color: #fff;
+  color: #f53d3d;
   padding: 1.1em 2.5em;
   border-radius: 100px;
   margin: 1.2em auto;
   cursor: pointer;
-  box-shadow: 2px 3px 10px rgba(0,0,0,.25),
-  inset -2px -3px 10px rgba(0,0,0,.35),
+  box-shadow: 2px 3px 10px rgba(165, 163, 163, 0.25),
+  inset -2px -3px 10px rgba(75, 73, 73, 0.35),
   inset 2px 3px 10px rgba(255,255,255,.5);
   letter-spacing: 1.25px;
 }

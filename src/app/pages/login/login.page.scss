@@ -143,7 +143,7 @@ ion-card{
        }
 
        .btn_wrap{
-        margin-left: -18%;
+        margin-left: -13%;
     }
 
      }
@@ -177,7 +177,7 @@ ion-card{
            }
          
     .btn_wrap{
-    margin-left: -9%;
+    margin-left: 0%;
 }}
 
 
@@ -295,10 +295,10 @@ i {
             align-items: center;
     overflow: hidden;
     cursor: pointer;
-    width: 300px;
+    width: 170px;
     // left: 25%;
     height: 50px;
-    background-color: #EEEEED;
+    background-color: #ffffff;
     border-radius: 80px;
     // padding: 0 18px;
     will-change: transform;
@@ -313,7 +313,7 @@ i {
   }
   
   
-  .span {
+  .span1 {
     position: fixed;
     z-index: 99;
     width: 300px;
@@ -369,7 +369,7 @@ i {
                     transition-delay: .4s;
   }
   
-  .btn_wrap:hover .span {
+  .btn_wrap:hover .span1 {
     -webkit-transition-delay: .25s;
             transition-delay: .25s;
     -webkit-transform: translateX(-280px);
@@ -446,12 +446,12 @@ html {
 
 .card {
   background-color: #fff;
-  width: 400px;
-  height: 650px;
+  width: 320px;
+  height: 550px;
   position: absolute;
   left: 10%;
   top: 5%;
-  z-index: 100;
+//   z-index: 100;
   border-radius: 40px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25),
     inset -5px -5px 20px rgba(0,0,0,.25),
@@ -475,7 +475,6 @@ html {
 
 .para{
     position:relative ;
-    flex: unset;
     text-align: center;
 }
 
@@ -512,11 +511,6 @@ ion-input[type="text"]:focus, ion-input[type="password"]:focus {
   outline: none;
 }
 
-h2 {
-  margin: 1.5em;
-  font-size: 2rem;
-  text-align: center;
-}
 
 .else {
   display: flex;
@@ -553,6 +547,11 @@ label:active{
   transform: scale(.99);
 }
 
+u{
+    color: blue;
+    // border: blue;
+}
+
 input[type="submit"] {
   background-color: #f53d3d;
   border: none;
@@ -579,30 +578,6 @@ input[type="submit"]:active {
 
 input[type="submit"]:focus {
   outline: none;
-}
-
-
-section::before {
-  background-color: #fff;
-  width: 100%;
-  height: 250px;
-  position: absolute;
-  content: " ";
-  top: -100px;
-  transform: skewY(-3.5deg);
-}
-
-.fa-instagram {
-position: absolute;
-  color: #f53d3d;
-  bottom: 20%;
-  left: 20%;
-  font-size: 1.5rem;
-  transition: 300ms;
-}
-
-.instagram:hover .fa-instagram {
-  color: #149ad195;
 }
 
 @keyframes right{

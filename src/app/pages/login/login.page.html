@@ -1,87 +1,24 @@
 <ion-content>
 
-  <!-- <div class="card">
-
-    <div class="content">
-
-      <div class="user">
-        <ion-input type="text" placeholder="Username">
-          <ion-icon style="float: left;color: black;font-size:
-            large;margin-left: 10px;" name="person-outline"></ion-icon>
-        </ion-input>
-      </div>
-
-      <div class="pass">
-        <ion-input type="password" placeholder="Password">
-          <ion-icon style="float: left;color: black;font-size:
-            large;margin-left: 10px;" name="lock-closed-outline"></ion-icon>
-        </ion-input>
-      </div>
-
-      <div class="else">
-        <input id="remember" type="checkbox">
-        <label for="remember" class="rem">Remember me</label>
-        <span routerLink="../account-recovery"><u>Forgot password?</u></span>
-      </div>
-
-      <input type="submit" value="Login" routerLink='/tabs/tab7'>
-
-      <p class="para">
-        <label>Dont have Account! </label>
-        <br>
-        <button class="lbl-reg" routerLink='../register' fill="outline">
-          <div><u>Register Here</u></div>
-        </button>
-        <br><br>
-        <ion-label>OR</ion-label>
-      </p>
-
-    
-
-      </div>
-    </div>
-
-  </div> -->
-
+  
   <div class="form">
-    <!-- <h2>Lets Start!</h2> -->
+    <h4>Login</h4>
     <div class="form-content">
       <div class="form-box">
         <label>Username</label>
-        <input type="text" name="" placeholder="example@mail.com">
+        <input type="text" name="" for="label" placeholder="example@mail.com">
       </div>
       <div class="form-box">
         <label>Password</label>
         <input type="password" name="" placeholder="••••••••">
       </div>
       <div class="form-box">
-        <input type="submit" name="submit" value="Sign In">
+        <input type="submit" name="submit" value="Sign In" routerLink="/tabs/tab7">
       </div>
     </div>
 
-    <p class="form-forget">Forget password? <a href="#">Click Here...</a></p>
-    
-    <!-- <div class="form-box1">
-
-      <a href="https://facebook.com" target="_blank">
-        <ion-icon class="fb-sty" name="logo-facebook"></ion-icon>
-      </a>
-
-      <a href="https://gmail.com" target="_blank">
-        <ion-icon class="google-sty" name="logo-google"></ion-icon>
-      </a>
-
-      <a href="https://twitter.com" target="_blank">
-        <ion-icon class="tw-sty" name="logo-twitter"></ion-icon>
-      </a>
-
-      <a href="https://linkedin.com" target="_blank">
-        <ion-icon class="linked-sty" name="logo-linkedin"></ion-icon>
-      </a>
-
-    </div> -->
-
-   
+    <p class="form-forget">Forget password? <a routerLink="../account-recovery">Click Here...</a></p>
+       
       <div class="btn_wrap">
         
         <ion-label class="span1">Click Me!</ion-label>

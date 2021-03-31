@@ -14,7 +14,11 @@
   .btn_wrap{
         margin-left: -1%;
     }
-  
+
+    .form{
+      margin-top: 15%;
+      left: 60px;
+    }
      }
      
 /*for iphone X*/
@@ -23,8 +27,6 @@
        .btn_wrap{
            margin-left: -2%;
        }
-       
-    
      }
 
 /*for iphone 6/7/8*/
@@ -50,7 +52,6 @@
 /*for ipad */
 @media(max-width:768px) and (max-height:1024px){
    
-        
             .btn_wrap{
                 left: 15%;
             }
@@ -226,11 +227,6 @@ html {
   color: #FFF;
 }
 
-ion-input[type="text"]:focus, ion-input[type="password"]:focus {
-  outline: none;
-}
-
-
 .else {
   display: flex;
   align-items: center;
@@ -265,8 +261,6 @@ span:active,
 label:active{
   transform: scale(.99);
 }
-
-
 
 .inputBx1[type="submit"] {
 //   background-color: #f53d3d;
@@ -336,13 +330,23 @@ label:active{
   height: 550px;
 }
 
-.form h2{
+.form h4{
   color: #F2A622;
   font-size: 28px;
   font-weight: 800;
-  letter-spacing: 5px;
-  text-transform: uppercase;
+  // letter-spacing: 5px;
+  text-transform:capitalize;
 }
+
+.form-content{
+  .form-box{
+    label{
+      margin-top:20px;
+    }
+   
+  }
+}
+
 
 .form .form-content{
   margin: 45px 22px;

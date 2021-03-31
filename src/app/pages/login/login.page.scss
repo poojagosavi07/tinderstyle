@@ -1,6 +1,6 @@
 *{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
+    // font-size: 15px;
     font-weight: normal;
     color: white;
     // background-color:#1e2833;
@@ -176,9 +176,9 @@ i {
     height: 50px;
     background-color: #2A2A2A;
     border-radius: 80px;
-    font
     // padding: 0 18px;
     will-change: transform;
+    box-shadow: -5px -5px 10px rgba(102, 101, 101, 0.2), 5px 5px 15px rgba(0, 0, 0, 0.7);
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
   }
@@ -224,6 +224,7 @@ i {
             align-items: center;
     width: 350px;
     height: 64px;
+    font-size: 20px;
     border-radius: 80px;
   }
   
@@ -287,53 +288,12 @@ i {
   width:100px;
   }
 
-//   ion-content {
-//     --background: linear-gradient(#919191, #ffffff);
-//   }
-
-/* Social Icons */
-#social_side_links {
-	position: fixed;
-  top: 70px;
-  left: 0;
-  padding: 0;
-  list-style: none;
-  z-index: 99;
-}
-
-#social_side_links li a {display: block;}
-
-#social_side_links li a img {
-	display: block;
-	max-width:40px;
-  padding: 10px;
-  -webkit-transition:  background .2s ease-in-out;
-  -moz-transition:  background .2s ease-in-out;
-  -o-transition:  background .2s ease-in-out;
-  transition:  background .2s ease-in-out;
-}
-
-#social_side_links li a:hover img {
-background: rgba(0, 0, 0, .2);
- 
-    &:hover{
-    padding-left: 20px;
-    width:65px;
-    }}
 
 /*-----------------------------------------------------------------------------------------------------*/
     // @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 html {
   background: #fff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-//   font-family: 'Fredoka One', cursive;
-  color: #f53d3d;
 }
 
 *::selection{
@@ -511,7 +471,7 @@ label:active{
   position: relative;
   text-align: center;
   width: 300px;
-  height: 600px;
+  height: 550px;
 }
 
 .form h2{

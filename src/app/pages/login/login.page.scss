@@ -389,40 +389,40 @@
 // }
 
 
-// .else {
-//   display: flex;
-//   align-items: center;
-//   width: 85%;
-//   margin: .5em auto;
-// }
+.else {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin: .5em auto;
+}
 
-// .else span {
-//   margin-left: auto;
-// }
+.else span {
+  margin-left: auto;
+}
 
-// .else span,
-// .else label {
-// //   font-size: .75rem;
-//   text-align: right;
-//   opacity: .65;
-//   cursor: pointer;
-//   transition: 250ms;
-// }
+.else span,
+.else label {
+//   font-size: .75rem;
+  text-align: right;
+  opacity: .65;
+  cursor: pointer;
+  transition: 250ms;
+}
 
-// .else label {
-//   margin-left: .5em;
-// }
+.else label {
+  margin-left: .5em;
+}
 
-// span:hover,
-// label:hover{
-//   opacity: 100%;
-//   text-decoration: underline;
-// }
+span:hover,
+label:hover{
+  opacity: 100%;
+  text-decoration: underline;
+}
 
-// span:active,
-// label:active{
-//   transform: scale(.99);
-// }
+span:active,
+label:active{
+  transform: scale(.99);
+}
 
 
 
@@ -473,91 +473,3 @@
 }
 
 /*-------------------------*/
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
-
-*{
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.form{
-  background: #2A2A2A;
-  border-radius: 20px;
-  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.2), 5px 5px 15px rgba(0, 0, 0, 0.7);
-  // padding: 40px 40px 60px;
-  position: relative;
-  text-align: center;
-  width: 300px;
-  height: 600px;
-}
-
-.form h2{
-  color: #F2A622;
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-
-.form .form-content{
-  margin: 45px 22px;
-  text-align: left;
-}
-
-.form .form-content .form-box{
-  margin-top: 25px;
-}
-
-.form .form-content .form-box label{
-  color: #FFFFFF;
-  display: block;
-  font-size: 18px;
-  // letter-spacing: 2px;
-  margin-bottom: 5px;
-}
-
-.form .form-content .form-box input{
-  background: #2A2A2A;
-  border: none;
-  border-radius: 10px;
-  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2), inset 2px 2px 6px rgba(0, 0, 0, 0.8);
-  color: #22F2AA;
-  font-size: 18px;
-  height: 60px;
-  outline: none;
-  padding: 5px 15px;
-  width: 100%;
-}
-
-.form .form-content .form-box input[type="submit"]{
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.8);
-  font-weight: 600;
-  margin-top: 20px;
-}
-
-.form .form-content .form-box input[type="submit"]:active{
-  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2), inset 2px 2px 6px rgba(0, 0, 0, 0.8);
-  color: #079D69;
-  margin-top: 20px;
-}
-
-.form .form-content .form-box input::placeholder{
-  color: #A2A2A2;
-  font-size: 18px;
-}
-
-.form-forget{
-  color: #A2A2A2;
-  margin-top: 30px;
-}
-
-.form-forget a{
-  color: #EF1A6B;
-}
-
-ion-content{
-  --background: #2A2A2A;
-}

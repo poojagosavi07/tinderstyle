@@ -21,7 +21,9 @@ ion-tabs{
 ion-tab-button{
   box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2), inset 2px 2px 6px rgba(0, 0, 0, 0.8);
   border-radius: 90px;
-  letter-spacing: 20px;
+  margin: 10px 10px;
+  height: 70px;
+  width: fit-content;
  
 }
 

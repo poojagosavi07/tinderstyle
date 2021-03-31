@@ -9,39 +9,9 @@ font-size: 15px;;
     margin-right: auto;
 }
 
-.button_box {
-    width: 90%;
-    display: flex;
-    align-items: flex-start;
-    margin-left: 4%;
-    justify-content: center;
-  }
-  .small_button {
-    font-size: 20px;
-    --border-radius: 50%;
-    --border-width: 8px;
-    --border-color: #f3f3f3;
-    --padding-start: 8px;
-    --padding-end: 8px;
-    --background-activated: #f3f3f3;
-  }
-  .large_button {
-    font-size: 30px;
-    --border-radius: 50%;
-    --border-width: 8px;
-    --border-color: #f3f3f3;
-    --padding-start: 15px;
-    --padding-end: 15px;
-    margin-right: -10px;
-    margin-left: -10px;
-    --background-activated: #f3f3f3;
-  }
-  .space {
-    width: 12px;
-  }
-
   .div-head{
-    background: #f0f0f0;
+    // background: #f0f0f0;
+    background: #2A2A2A;
     padding-bottom: 5px;
 }
 
@@ -74,6 +44,7 @@ font-size: 15px;;
   .user-name, .user-city{
       text-align: left;
       margin: 0;
+      color: white;
       margin-top: 5px;
   }
 
@@ -84,6 +55,7 @@ font-size: 15px;;
   .user-city{
     font-size: 14px;
   }
+
   .list-option{
       padding-left: 15px;
       padding-right: 15px;
@@ -92,9 +64,31 @@ font-size: 15px;;
 
   ion-fab-button{
     height: 80px;
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2), inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+    background: #2A2A2A;
+
     margin-top: 30px;
     width: 80px;
+    font-size: 20PX;
     ion-icon{
-      font-size: 40px;
+     
+      // font-size: 20px;
+      background: #2A2A2A;
+      box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2), inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+      border: 0 !important;
+      border-color: #2A2A2A !important;
+      border-radius: 50px;
+      height: 50px;
+      width: 50px;
+   
     }
   }
+
+  ion-col{
+    --background: #2A2A2A;
+  }
+  
+ion-content{
+  --background: #2A2A2A;
+  color: white;
+}

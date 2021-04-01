@@ -2,16 +2,18 @@
 
   <sw-card-wrapper #cardWrapper>
     <div class="container">
-      <ion-card class=" card" *ngFor="let question of questions; let index=index" swSwipeable [width]="350"
+      <ion-card class="card" *ngFor="let question of questions; let index=index"
+        swSwipeable [width]="350"
         [height]="370" [orientation]="'y'" [class.visible]="question.visible"
         [class.hidden]="!question.visible">
-        <img [src]="question.image" [alt]="question.name" style="height: 300px;width: 300px;">
-        <h3>{{question.name}} ,{{question.age}} <ion-icon color="success" name="checkmark-circle"></ion-icon></h3>
-       
+        <img [src]="question.image" [alt]="question.name" style="height:
+          300px;width: 300px;">
+        <h3>{{question.name}} ,{{question.age}} <ion-icon color="success"
+            name="checkmark-circle"></ion-icon></h3>
+
       </ion-card>
     </div>
   </sw-card-wrapper>
-
   <!-- <div class="button_box">
    
     
@@ -44,50 +46,41 @@
       </ion-button>
     
   </div> -->
-
   <div class="multi-button button_box">
-  <ion-row>
-    <ion-col>
-      <ion-fab-button >
-        <ion-icon name="refresh-outline" color="light"></ion-icon>
-      </ion-fab-button>
-    </ion-col>
+    <ion-row>
+      <ion-col>
+        <ion-fab-button>
+          <ion-icon name="refresh-outline" color="light"></ion-icon>
+        </ion-fab-button>
+      </ion-col>
 
-    <ion-col>
-      <ion-fab-button class="heart-dis" (click)="onDisLike()">
-        <ion-icon name="heart-dislike-outline" ></ion-icon>
-      </ion-fab-button>
-    </ion-col>
+      <ion-col>
+        <ion-fab-button class="heart-dis" (click)="onDisLike()">
+          <ion-icon name="heart-dislike-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-col>
 
-    <ion-col>
-      <ion-fab-button class="heart-like" (click)="onLike()">
-        <ion-icon name="heart-sharp"></ion-icon>
-      </ion-fab-button>
-    </ion-col>
+      <ion-col>
+        <ion-fab-button class="heart-like" (click)="onLike()">
+          <ion-icon name="heart-sharp"></ion-icon>
+        </ion-fab-button>
+      </ion-col>
 
-    <ion-col>
-      <ion-fab-button class="follow" >
-        <ion-icon name="square-outline"></ion-icon>
-      </ion-fab-button>
-    </ion-col>
+      <ion-col>
+        <ion-fab-button class="follow">
+          <ion-icon name="square-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-col>
 
-    <ion-col>
-      <ion-fab-button>
-        <ion-icon name="star-outline"></ion-icon>
-      </ion-fab-button>
-    </ion-col>
+      <ion-col>
+        <ion-fab-button>
+          <ion-icon name="star-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-col>
 
-  </ion-row>
-</div>
+    </ion-row>
+  </div>
 
-  <!-- <div class="multi-button button_box">
-  
-    <button><ion-icon name="refresh-outline" style="color: #f53d3d;"></ion-icon></button>
-    <button (click)="onDisLike()"><ion-icon name="heart-dislike-outline" style="color: #f53d3d;"></ion-icon></button>
-    <button (click)="onLike()"> <ion-icon name="heart-sharp" style="color: #f53d3d;"></ion-icon></button>
-    <button><ion-icon name="square-outline" style="color: #f53d3d;"></ion-icon></button>
-    <button><ion-icon style="color: #f53d3d;" name="star-outline"></ion-icon></button>
-</div> -->
-
+ 
 
 </ion-content>

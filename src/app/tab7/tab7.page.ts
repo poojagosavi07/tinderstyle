@@ -69,7 +69,13 @@ export class Tab7Page implements OnInit, AfterViewInit
        () => {},
        () => { this.router.navigate(['/signup2']); }
      ); */
+     setTimeout(function() {
+      document.getElementById('hideme').style.display='none'
+      document.getElementById("container").style.display = "block"
+      document.getElementById("bx").style.display = "block"
+      }, 10*300);
   }
+
 
   // LIKE ACTION
   onLike() {

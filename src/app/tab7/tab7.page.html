@@ -1,13 +1,13 @@
 <ion-content padding>
 
-  <div class="rhombus">
+  <div class="rhombus"  id="hideme">
     <div class="circle1"></div>
     <div class="circle2"></div>
   </div>
  
 
   <sw-card-wrapper #cardWrapper>
-    <div class="container">
+    <div class="container" id="container">
       <ion-card class="card" *ngFor="let question of questions; let index=index"
         swSwipeable [width]="350"
         [height]="370" [orientation]="'y'" [class.visible]="question.visible"
@@ -52,7 +52,7 @@
       </ion-button>
     
   </div> -->
-  <div class="multi-button button_box">
+  <div class="multi-button button_box" id="bx">
     <ion-row>
       <ion-col>
         <ion-fab-button>

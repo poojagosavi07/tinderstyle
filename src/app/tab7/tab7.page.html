@@ -1,9 +1,5 @@
 <ion-content padding>
 
-  <div class="load" *ngIf="showImage">
-    <ion-icon name="heart-outline" class="icon" color="light"></ion-icon>
-  </div>
-
   <sw-card-wrapper #cardWrapper>
     <div class="container">
       <ion-card class=" card" *ngFor="let question of questions; let index=index" swSwipeable [width]="350"

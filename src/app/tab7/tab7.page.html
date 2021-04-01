@@ -46,13 +46,48 @@
   </div> -->
 
   <div class="multi-button button_box">
+  <ion-row>
+    <ion-col>
+      <ion-fab-button >
+        <ion-icon name="refresh-outline" color="light"></ion-icon>
+      </ion-fab-button>
+    </ion-col>
+
+    <ion-col>
+      <ion-fab-button class="heart-dis" (click)="onDisLike()">
+        <ion-icon name="heart-dislike-outline" ></ion-icon>
+      </ion-fab-button>
+    </ion-col>
+
+    <ion-col>
+      <ion-fab-button class="heart-like" (click)="onLike()">
+        <ion-icon name="heart-sharp"></ion-icon>
+      </ion-fab-button>
+    </ion-col>
+
+    <ion-col>
+      <ion-fab-button >
+        <ion-icon name="square-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-col>
+
+    <ion-col>
+      <ion-fab-button>
+        <ion-icon name="star-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-col>
+
+  </ion-row>
+</div>
+
+  <!-- <div class="multi-button button_box">
   
     <button><ion-icon name="refresh-outline" style="color: #f53d3d;"></ion-icon></button>
     <button (click)="onDisLike()"><ion-icon name="heart-dislike-outline" style="color: #f53d3d;"></ion-icon></button>
     <button (click)="onLike()"> <ion-icon name="heart-sharp" style="color: #f53d3d;"></ion-icon></button>
     <button><ion-icon name="square-outline" style="color: #f53d3d;"></ion-icon></button>
     <button><ion-icon style="color: #f53d3d;" name="star-outline"></ion-icon></button>
-</div>
+</div> -->
 
 
 </ion-content>

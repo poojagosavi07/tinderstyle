@@ -1,3 +1,16 @@
-*{
+ion-contet{
     font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+ion-content{
+    --background: #575656;
+}
+
+ion-card{
+    --background: #636262;
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.8);
+    ion-item{
+        --background: #636262;
+    }
 }

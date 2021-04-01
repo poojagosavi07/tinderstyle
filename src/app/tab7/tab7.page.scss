@@ -179,6 +179,13 @@ ion-fab-button{
   width: 75px;
   margin-bottom: 10px;
   float: center;
+  -webkit-animation: seconds 1.0s forwards;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 5s;
+  animation: seconds 1.0s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 5s;
+  position: relative;
 }
 
 .rhombus:before {
@@ -222,59 +229,6 @@ ion-fab-button{
   /*animation-direction: alternate;*/
 }
 
-.rhombus2 {
-  margin: 40px 0 0 60px;
-  /*background: #fcfcfc;*/
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 10px;
-  height: 75px;
-  width: 75px;
-  margin-bottom: 10px;
-  float: center;
-  animation-delay: 0.9s;
-  animation-duration: 0.8s;
-  animation-name: pump;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.26,-0.53,.57,2.32);
-}
-
-.rhombus2:before {
-  content: "";
-  position: absolute;
-  background: #EA4C89;
-  height: 40px;
-  width: 40px;
-  z-index: 0;
-  margin-top: 15px;
-  margin-left: 15px;
-  transform: rotate(45deg);
-}
-
-.rhombus2 .circle21 {
-  content: "";
-  position: absolute;
-  background: #EA4C89;
-  height: 40px;
-  width: 40px;
-  z-index: 1;
-  border-radius: 50%;
-  /*animation-direction: alternate;*/
-}
-
-.rhombus2 .circle22 {
-  content: "";
-  position: absolute;
-  background: #EA4C89;
-  height: 40px;
-  width: 40px;
-  z-index: 1;
-  margin-left: 30px;
-  border-radius: 50%;
-  /*animation-direction: alternate;*/
-}
-
 @keyframes pump {
   0%{
       transform: scale(1);
@@ -308,8 +262,4 @@ ion-fab-button{
       margin-top: 0px;
       margin-left: 30px;
   }
-}
-
-#hideMe{
-  display: none;
 }

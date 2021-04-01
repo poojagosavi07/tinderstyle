@@ -16,12 +16,12 @@ export class SplashPage implements OnInit {
    }
 
   ngOnInit() {
-    setTimeout(function() 
-    {
-      document.getElementById('splash').style.display='none'
-      document.getElementById('bar').style.display = 'none'
-      }, 10*500);
-      this.router.navigateByUrl('/pages/login');
+    // setTimeout(function() 
+    // {
+    //   document.getElementById('splash').style.display='none'
+    //   document.getElementById('bar').style.display = 'none'
+    //   }, 10*500);
+      // this.router.navigateByUrl('/pages/login');
     
   }
 

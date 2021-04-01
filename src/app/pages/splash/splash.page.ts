@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-splash',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SplashPage implements OnInit {
   progress = 0.20;
-  constructor() 
+  constructor(public route: Router) 
   {
     setInterval( () => {  
       this.progress += .1;  
@@ -15,6 +16,12 @@ export class SplashPage implements OnInit {
    }
 
   ngOnInit() {
+    setTimeout(function() 
+    {
+      document.getElementById('splash').style.display='none'
+      document.getElementById('bar').style.display = 'none'
+      }, 10*500);
+      this.router.navigateByUrl('/pages/login');
     
   }
 

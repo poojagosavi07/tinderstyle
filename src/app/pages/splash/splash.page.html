@@ -6,11 +6,13 @@
 
 <ion-content>
 
- <ion-button style="height:max-content;margin-top: 50px;" expand="block" fill="clear" routerLink='/pages/login'>
-  <img src="./../../../assets/img/splash.png">
-</ion-button>
+ <!-- <ion-button expand="block" fill="clear" routerLink='/pages/login'> -->
+  <img src="./../../../assets/img/unnamed.png" routerLink="/pages/login" id="splash">
+<!-- </ion-button> -->
   
-  <ion-progress-bar value="0.6" [value]="progress" color="danger" class="bar" type="indeterminate"></ion-progress-bar>
+  <ion-progress-bar id="bar" value="0.6" [value]="progress" color="danger" class="bar" type="indeterminate">
+    
+  </ion-progress-bar>
 
   <!-- <div id="loading-wrapper">   
       <div id="loading-text">

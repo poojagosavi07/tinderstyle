@@ -1,9 +1,21 @@
 <ion-content padding>
 
-  <div class="rhombus"  id="hideme">
+  <!-- <div class="rhombus"  id="hideme">
     <div class="circle1"></div>
     <div class="circle2"></div>
-  </div>
+  </div> -->
+
+  <div class="Parent-loading" id="hideme">
+
+    <div class="loding-animation-holder">
+        <div class="loading-animator"></div>
+        <div class="loading-animator"></div>
+        <div class="loading-animator"></div>
+        <div class="loading-animator"></div>
+        <div class="middle-circle"></div>
+    </div>
+ 
+</div>
  
 
   <sw-card-wrapper #cardWrapper>
@@ -56,13 +68,13 @@
     <ion-row>
       <ion-col>
         <ion-fab-button>
-          <ion-icon name="refresh-outline" color="light"></ion-icon>
+          <ion-icon name="refresh"></ion-icon>
         </ion-fab-button>
       </ion-col>
 
       <ion-col>
         <ion-fab-button class="heart-dis" (click)="onDisLike()">
-          <ion-icon name="heart-dislike-outline"></ion-icon>
+          <ion-icon name="heart-dislike"></ion-icon>
         </ion-fab-button>
       </ion-col>
 
@@ -74,13 +86,13 @@
 
       <ion-col>
         <ion-fab-button class="follow">
-          <ion-icon name="square-outline"></ion-icon>
+          <ion-icon name="square"></ion-icon>
         </ion-fab-button>
       </ion-col>
 
       <ion-col>
         <ion-fab-button>
-          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star"></ion-icon>
         </ion-fab-button>
       </ion-col>
 

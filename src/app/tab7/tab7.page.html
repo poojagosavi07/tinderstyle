@@ -1,5 +1,9 @@
 <ion-content padding>
 
+  <div class="load" *ngIf="showImage">
+    <ion-icon name="heart-outline" class="icon" color="light"></ion-icon>
+  </div>
+
   <sw-card-wrapper #cardWrapper>
     <div class="container">
       <ion-card class=" card" *ngFor="let question of questions; let index=index" swSwipeable [width]="350"
@@ -66,7 +70,7 @@
     </ion-col>
 
     <ion-col>
-      <ion-fab-button >
+      <ion-fab-button class="follow" >
         <ion-icon name="square-outline"></ion-icon>
       </ion-fab-button>
     </ion-col>

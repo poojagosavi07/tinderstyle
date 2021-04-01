@@ -9,8 +9,9 @@ import { Router } from '@angular/router';
   templateUrl: './tab7.page.html',
   styleUrls: ['./tab7.page.scss'],
 })
-export class Tab7Page implements OnInit, AfterViewInit{
- 
+export class Tab7Page implements OnInit, AfterViewInit 
+{
+
   questions = [
     {
       name: 'Donald Trump',
@@ -48,7 +49,7 @@ export class Tab7Page implements OnInit, AfterViewInit{
       age: 32,
       image: './../../assets/img/taylor.jpg',
       visible: true
-     
+
     }
   ];
 
@@ -58,12 +59,12 @@ export class Tab7Page implements OnInit, AfterViewInit{
   // }
 
   nbr = 1;
-  @ViewChildren(IonCard, {read: ElementRef}) cards: QueryList<ElementRef>;
+  @ViewChildren(IonCard, { read: ElementRef }) cards: QueryList<ElementRef>;
   constructor(private gestureCtrl: GestureController, public plt: Platform,
-              public modalController: ModalController,
-              public router: Router) {}
+    public modalController: ModalController,
+    public router: Router) { }
   ngOnInit(): void {
-   //  this.checkPhoto();
+    //  this.checkPhoto();
     /* this.authservice.onGetUser().then(
        () => {},
        () => { this.router.navigate(['/signup2']); }
@@ -72,12 +73,12 @@ export class Tab7Page implements OnInit, AfterViewInit{
 
   // LIKE ACTION
   onLike() {
-        
+
     const card = this.cards.toArray()[this.cards.toArray().length - this.nbr];
     card.nativeElement.style.transition = '1s ease-out';
     card.nativeElement.style.transform = `translateY(${-this.plt.width() * 3}px)
           rotate(${100}deg)`;
-    this.nbr ++;
+    this.nbr++;
   }
 
   // DISLIKE ACTION
@@ -86,13 +87,13 @@ export class Tab7Page implements OnInit, AfterViewInit{
     card.nativeElement.style.transition = '1s ease-out';
     card.nativeElement.style.transform = `translateY(${+this.plt.width() * 3}px)
           rotate(${100}deg)`;
-    this.nbr ++;
+    this.nbr++;
 
   }
 
   ngAfterViewInit(): void {
-   const cardArray = this.cards.toArray();
-   this.useTinderSwipe(cardArray);
+    const cardArray = this.cards.toArray();
+    this.useTinderSwipe(cardArray);
   }
 
   // TINDER SWIPE FONCTIONNALITY
@@ -101,7 +102,7 @@ export class Tab7Page implements OnInit, AfterViewInit{
     for (let i = 0; i < cardArray.length; i++) {
       const card = cardArray[i];
 
-      const gesture =  this.gestureCtrl.create({
+      const gesture = this.gestureCtrl.create({
         el: card.nativeElement,
         gestureName: 'swipte',
         onStart: ev => {
@@ -117,11 +118,11 @@ export class Tab7Page implements OnInit, AfterViewInit{
           if (ev.deltaX > 150) {
             card.nativeElement.style.transform = `translateY(${+this.plt.width() * 3}px)
             rotate(${ev.deltaX / 2}deg)`;
-            this.nbr ++;
+            this.nbr++;
           } else if (ev.deltaX < -150) {
             card.nativeElement.style.transform = `translateY(${-this.plt.width() * 3}px)
             rotate(${ev.deltaX / 2}deg)`;
-            this.nbr ++;
+            this.nbr++;
           } else {
             card.nativeElement.style.transform = '';
           }
@@ -139,7 +140,7 @@ export class Tab7Page implements OnInit, AfterViewInit{
     const hexCode = this.decimalToHex(min, 2);
 
     if (x < 0) {
-      color = '#FF' + hexCode  + hexCode;
+      color = '#FF' + hexCode + hexCode;
     } else {
       color = '#' + hexCode + 'FF' + hexCode;
     }

@@ -1,6 +1,6 @@
 <ion-content>
 
-  
+
   <div class="form">
     <h4>Login</h4>
     <div class="form-content">
@@ -12,40 +12,43 @@
         <label>Password</label>
         <input type="password" name="" placeholder="••••••••">
       </div>
-      <div class="form-box">
-        <input type="submit" name="submit" value="Sign In" routerLink="/tabs/tab7">
-      </div>
+     
+        <ion-button type="submit" name="submit" value="Sign In" expand="block"
+          routerLink="/tabs/tab7">Sign In</ion-button>
+     
     </div>
 
-    <p class="form-forget">Forget password? <a routerLink="../account-recovery">Click Here...</a></p>
+    <p class="form-forget">Forget password? <a routerLink="../account-recovery">Click
+        Here...</a></p>
 
-    <p class="form-forget">Dont Have Account?<a routerLink="../register">Sign-up Here!</a></p>
-       
-      <div class="btn_wrap">
-        
-        <ion-label class="span1">Click Me!</ion-label>
-        
-        <div class="container1">
-  
-          <a href="https://facebook.com" target="_blank">
-            <ion-icon class="fb-sty" name="logo-facebook"></ion-icon>
-          </a>
-  
-          <a href="https://gmail.com" target="_blank">
-            <ion-icon class="google-sty" name="logo-google"></ion-icon>
-          </a>
-  
-          <a href="https://twitter.com" target="_blank">
-            <ion-icon class="tw-sty" name="logo-twitter"></ion-icon>
-          </a>
-  
-          <a href="https://linkedin.com" target="_blank">
-            <ion-icon class="linked-sty" name="logo-linkedin"></ion-icon>
-          </a>
-  
-        </div>
-  
-      </div>
+    <p class="form-forget">Dont Have Account?<a routerLink="../register">Sign-up
+        Here!</a></p>
+
+    <div class="btn_wrap">
+
+      <ion-fab-button href="https://facebook.com" target="_blank">
+          <ion-icon class="fb-sty" name="logo-facebook"></ion-icon> 
+      </ion-fab-button>     
+
+      <div class="space"></div>
+
+      <ion-fab-button href="https://gmail.com" target="_blank">
+        <ion-icon class="google-sty" name="logo-google"></ion-icon>
+      </ion-fab-button>
+
+      <div class="space"></div>
+
+      <ion-fab-button href="https://twitter.com" target="_blank">
+        <ion-icon class="tw-sty" name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+
+      <div class="space"></div>
+      
+      <ion-fab-button href="https://linkedin.com" target="_blank">
+        <ion-icon class="linked-sty" name="logo-linkedin"></ion-icon>
+      </ion-fab-button>
+
     </div>
- 
-</ion-content>
+</div>
+
+  </ion-content>

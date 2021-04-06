@@ -1,6 +1,26 @@
-
 .btn-sty
 {
-
 text-align: center;
 }
+
+ion-content,ion-item{
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    --background: #cecece;
+    // --background: #2A2A2A;
+    }
+
+    ion-button{
+    
+        box-shadow:  -2px -2px 6px rgba(255, 255, 255, 0.2),  2px 2px 6px rgba(0, 0, 0, 0.8);
+        background: #2A2A2A;
+        border-radius: 50px;
+        border: 0 !important;
+        --border-color: #2A2A2A;
+        margin-top: -6px;
+        padding: 5px;
+        --background: linear-gradient(#2A2A2A 0%,#2A2A2A 100%);
+      
+        --background-activated:#242323;
+      }
+         

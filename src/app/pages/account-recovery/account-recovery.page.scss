@@ -3,6 +3,14 @@
 text-align: center;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+
+*{
+    font-weight: normal;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 ion-content,ion-item{
     font-family: sans-serif;
     color: rgb(0, 0, 0);
@@ -16,7 +24,9 @@ ion-content,ion-item{
         background: #2A2A2A;
         border-radius: 50px;
         border: 0 !important;
+        margin-top: 15px;
         --border-color: #2A2A2A;
+        color: #cecece;
         margin-top: -6px;
         padding: 5px;
         --background: linear-gradient(#2A2A2A 0%,#2A2A2A 100%);

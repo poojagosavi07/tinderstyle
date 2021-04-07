@@ -13,7 +13,7 @@
   .user-name, .user-city{
       text-align: left;
       margin: 0;
-      color: white;
+      // color: white;
       margin-top: 5px;
   }
 
@@ -62,5 +62,5 @@
   
 ion-content{
   --background: #cecece;
-  color: white;
+  color: rgb(0, 0, 0);
 }

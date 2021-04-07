@@ -72,14 +72,20 @@
 
   <ion-card>
 
-    <div class="container">Gender : &nbsp;&nbsp;
+    <div class="container ion-text-left">Gender : &nbsp;&nbsp;
       <ion-item lines="none">
+        <ion-row>
+          <ion-col >
+            <input type='radio' id='male' name='radio'>
+            <label for='male'>Male</label>
+          </ion-col>
 
-        <input type='radio' id='male' name='radio'>
-        <label for='male'>Male</label>
-        <div class="space"></div>
-        <input type='radio' id='female' name='radio'>
-        <label for='female'>Female</label>
+          <ion-col>
+            <input type='radio' id='female' name='radio'>
+            <label for='female'>Female</label>
+          </ion-col>
+        </ion-row>
+
 
       </ion-item>
     </div>
@@ -115,14 +121,14 @@
 
   </ion-card>
 
-  <div class="ion-text-end">
+  <div class="ion-text-center">
     <!-- <ion-button slot="end" routerLink='../login' class="next-arrow" shape="round" (click)="goToRegister()" fill="outline">
         <ion-icon class="icon-arrow" name="arrow-forward-circle-outline"></ion-icon>
       </ion-button> -->
-    <ion-fab-button slot="end" routerLink='../login' class="next-arrow"
-      shape="round" (click)="goToRegister()" fill="outline">
-      <ion-icon class="icon-arrow" name="arrow-forward-circle-outline"></ion-icon>
-    </ion-fab-button>
+    <ion-button routerLink='../login' shape="round" (click)="goToRegister()"
+      fill="outline">Register
+      <!-- <ion-icon class="icon-arrow" name="arrow-forward-circle-outline"></ion-icon> -->
+    </ion-button>
 
   </div>
 

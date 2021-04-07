@@ -90,7 +90,7 @@ left: 15%;
 @media(max-width:375px) and (max-height:812px){
    
   .btn_wrap{
-      left: 15px;
+      // left: 15px;
       top: 1%;
   }
 
@@ -144,7 +144,7 @@ left: 15%;
     display: flex;
     text-align: center;
     cursor: pointer;
- 
+ justify-content: center;
     // left: 5%;
   }
 

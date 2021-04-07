@@ -1,8 +1,6 @@
 <ion-content>
-  <ion-list>
-    <div class="">
-
-      <!-- <ion-item lines="none">
+ 
+          <!-- <ion-item lines="none">
               <span>
                 <ion-avatar class="avatar">
                   <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
@@ -51,19 +49,27 @@
       </ion-card>
 
       <ion-card>
-        <ion-radio-group value="gender">
+        <!-- <ion-radio-group value="gender">
           <ion-list-header>
-            <ion-label>Gender</ion-label>
+            <ion-label class="gen">Gender</ion-label>
           </ion-list-header>
           <ion-item lines="none">
             <ion-label>Female</ion-label>
-            <ion-radio slot="end" color="danger" value="female"></ion-radio>
+            <ion-radio slot="end" color="light" value="female"></ion-radio>
           </ion-item>
           <ion-item lines="none">
             <ion-label>Male</ion-label>
-            <ion-radio slot="end" color="danger" value="male"></ion-radio>
+            <ion-radio slot="end" color="light" value="male"></ion-radio>
           </ion-item>
-        </ion-radio-group>
+        </ion-radio-group> -->
+      <
+        <div class="container">
+          <input type='radio' id='male' checked='checked' name='radio'>
+          <label for='male'>Male</label>
+          <input type='radio' id='female' name='radio'>
+          <label for='female'>Female</label>
+      </div>
+
       </ion-card>
 
       <ion-card>
@@ -95,14 +101,16 @@
         </ion-item>
 
       </ion-card>
-    </div>
-
+ 
     <div class="ion-text-end">
-      <ion-button routerLink='../login' class="next-arrow" shape="round" (click)="goToRegister()" fill="outline">
-        <ion-icon class="icon-arrow" float-right name="arrow-forward-circle-outline"></ion-icon>
-      </ion-button>
-    </div>
+      <!-- <ion-button slot="end" routerLink='../login' class="next-arrow" shape="round" (click)="goToRegister()" fill="outline">
+        <ion-icon class="icon-arrow" name="arrow-forward-circle-outline"></ion-icon>
+      </ion-button> -->
 
-  </ion-list>
+      <ion-fab-button slot="end" routerLink='../login' class="next-arrow" shape="round" (click)="goToRegister()" fill="outline">
+        <ion-icon class="icon-arrow" name="arrow-forward-circle-outline"></ion-icon>
+      </ion-fab-button>
+
+    </div>
 
 </ion-content>

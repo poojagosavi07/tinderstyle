@@ -82,7 +82,7 @@ export class Tab7Page implements OnInit, AfterViewInit
 
     const card = this.cards.toArray()[this.cards.toArray().length - this.nbr];
     card.nativeElement.style.transition = '1s ease-out';
-    card.nativeElement.style.transform = `translateY(${-this.plt.width() * 3}px)
+    card.nativeElement.style.transform = `translateY(${-this.plt.width() * 1}px)
           rotate(${100}deg)`;
     this.nbr++;
   }
@@ -91,7 +91,7 @@ export class Tab7Page implements OnInit, AfterViewInit
   onDisLike() {
     const card = this.cards.toArray()[this.cards.toArray().length - this.nbr];
     card.nativeElement.style.transition = '1s ease-out';
-    card.nativeElement.style.transform = `translateY(${+this.plt.width() * 3}px)
+    card.nativeElement.style.transform = `translateY(${+this.plt.width() * 1}px)
           rotate(${100}deg)`;
     this.nbr++;
 
@@ -122,11 +122,11 @@ export class Tab7Page implements OnInit, AfterViewInit
         onEnd: ev => {
           card.nativeElement.style.transition = '1s ease-out';
           if (ev.deltaX > 150) {
-            card.nativeElement.style.transform = `translateY(${+this.plt.width() * 3}px)
+            card.nativeElement.style.transform = `translateY(${+this.plt.width() * 1}px)
             rotate(${ev.deltaX / 2}deg)`;
             this.nbr++;
           } else if (ev.deltaX < -150) {
-            card.nativeElement.style.transform = `translateY(${-this.plt.width() * 3}px)
+            card.nativeElement.style.transform = `translateY(${-this.plt.width() * 1}px)
             rotate(${ev.deltaX / 2}deg)`;
             this.nbr++;
           } else {

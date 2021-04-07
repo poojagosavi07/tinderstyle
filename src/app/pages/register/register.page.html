@@ -24,16 +24,14 @@
     <div class="img-wrapper">
       <img id="image" class="object-cover w-full h-32"
         src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" />
-    
-        <div class="absolute" onClick="document.getElementById('fileInput').click()">
+      <div class="absolute"
+        onClick="document.getElementById('fileInput').click()">
         <button type="button" class="btn">
           <ion-icon slot="icon-only" type="file" name="camera-outline"
             color="dark">
           </ion-icon>
         </button>
-    
       </div>
-
       <input name="photo" id="fileInput" accept="image/*" class="hidden photo"
         type="file" onChange="let file= this.files[0];
         var reader= new FileReader();
@@ -41,8 +39,7 @@
         document.getElementById('image').src= e.target.result;
         document.getElementById('image2').src= e.target.result;
         };
-        reader.readAsDataURL(file);">
-
+        reader.readAsDataURL(file);" hidden>
     </div>
   </div>
 
@@ -74,19 +71,7 @@
   </ion-card>
 
   <ion-card>
-    <!-- <ion-radio-group value="gender">
-          <ion-list-header>
-            <ion-label class="gen">Gender</ion-label>
-          </ion-list-header>
-          <ion-item lines="none">
-            <ion-label>Female</ion-label>
-            <ion-radio slot="end" color="light" value="female"></ion-radio>
-          </ion-item>
-          <ion-item lines="none">
-            <ion-label>Male</ion-label>
-            <ion-radio slot="end" color="light" value="male"></ion-radio>
-          </ion-item>
-        </ion-radio-group> -->
+
     <div class="container">Gender : &nbsp;&nbsp;
       <ion-item lines="none">
 

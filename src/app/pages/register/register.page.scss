@@ -137,16 +137,18 @@ ion-card{
       position: relative;
       color: #cecece;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+      box-shadow:  -2px -2px 6px rgba(255, 255, 255, 0.2),  2px 2px 6px rgba(0, 0, 0, 0.8);
+  --background: linear-gradient(#2A2A2A 0%,#2A2A2A 100%);
       font-weight: bold;
       background-color: #2A2A2A;
-      border: 2px solid #ced4da;
+      border: 2px solid #2A2A2A;
       cursor: pointer;
       transition: all 200ms ease;
     }
     
     input[type="radio"]:checked + label {
-      color: #495057;
-      background-color: #ced4da;
+      color: #585a5c;
+      background-color: #2A2A2A;
     }
     
     input[type="radio"] + label {
@@ -154,3 +156,6 @@ ion-card{
       border-radius: 10px;
     }
     
+    .space{
+      width: 10px;
+    }

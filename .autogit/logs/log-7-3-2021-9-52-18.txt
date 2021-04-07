@@ -1,0 +1,33 @@
+-------------------- Auto-Git Log --------------------
+		Wed Apr 07 2021 09:52:18 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/pages/account-recovery-mail/account-recovery-mail.page.html
+* src/app/pages/account-recovery-mail/account-recovery-mail.page.scss
+* src/app/pages/account-recovery-no/account-recovery-no.page.html
+* src/app/pages/account-recovery-no/account-recovery-no.page.scss
+* src/app/pages/account-recovery/account-recovery.page.html
+* src/app/pages/account-recovery/account-recovery.page.scss
+* src/app/pages/otp-verification/otp-verification.page.html
+* src/app/pages/otp-verification/otp-verification.page.scss
+* src/app/pages/pages-routing.module.ts
+* src/app/pages/register/register.page.html
+* src/app/pages/register/register.page.scss
+* src/app/tab6/tab6.page.scss
+
+
+Created files:
+* .autogit/logs/log-6-3-2021-17-56-32.txt
+
+
+Deleted files:
+
+
+Renamed files:
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]

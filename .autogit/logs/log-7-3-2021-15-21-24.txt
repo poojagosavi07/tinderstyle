@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Wed Apr 07 2021 15:21:24 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/pages/register/register.page.html
+
+
+Created files:
+* .autogit/logs/log-7-3-2021-14-51-15.txt
+
+
+Deleted files:
+
+
+Renamed files:

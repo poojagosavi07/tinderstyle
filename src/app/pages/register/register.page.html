@@ -9,7 +9,6 @@
               <ion-input type="file"></ion-input>
        
       </ion-item> -->
-
   <!-- <div class="card-avatar">
     <div class="img-wrapper">
       <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
@@ -21,64 +20,61 @@
     </div>
 
   </div> -->
-
   <div class="card-avatar border rounded-lg">
     <div class="img-wrapper">
       <img id="image" class="object-cover w-full h-32"
         src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" />
-      <div class="absolute" onClick="document.getElementById('fileInput').click()">
-        <button type="button" style="background-color: rgba(255, 255, 255, 0.65)"
-          >
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler
-            icon-tabler-camera" width="24" height="24" viewBox="0 0 24 24"
-            stroke-width="2" stroke="currentColor" fill="none"
-            stroke-linecap="round" stroke-linejoin="round">
-            <rect x="0" y="0" width="24" height="24" stroke="none"></rect>
-              </svg>
-            </button>
-          </div>
+    
+        <div class="absolute" onClick="document.getElementById('fileInput').click()">
+        <button type="button" class="btn">
+          <ion-icon slot="icon-only" type="file" name="camera-outline"
+            color="dark">
+          </ion-icon>
+        </button>
+    
+      </div>
 
-          <input name="photo" id="fileInput" accept="image/*" class="hidden"
-            type="file" onChange="let file= this.files[0];
-            var reader= new FileReader();
-            reader.onload= function (e) {
-            document.getElementById('image').src= e.target.result;
-            document.getElementById('image2').src= e.target.result;
-            };
-            reader.readAsDataURL(file);">
+      <input name="photo" id="fileInput" accept="image/*" class="hidden photo"
+        type="file" onChange="let file= this.files[0];
+        var reader= new FileReader();
+        reader.onload= function (e) {
+        document.getElementById('image').src= e.target.result;
+        document.getElementById('image2').src= e.target.result;
+        };
+        reader.readAsDataURL(file);">
 
-        </div>
+    </div>
   </div>
 
-        <ion-card>
-          <ion-item lines="none">
-            <ion-label position="floating">First Name</ion-label>
-            <ion-input></ion-input>
-          </ion-item>
+  <ion-card>
+    <ion-item lines="none">
+      <ion-label position="floating">First Name</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
 
-          <ion-item lines="none">
-            <ion-label position="floating">Last Name</ion-label>
-            <ion-input></ion-input>
-          </ion-item>
+    <ion-item lines="none">
+      <ion-label position="floating">Last Name</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
 
-          <ion-item lines="none">
-            <ion-label position="floating">Contact No.</ion-label>
-            <ion-input></ion-input>
-          </ion-item>
+    <ion-item lines="none">
+      <ion-label position="floating">Contact No.</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
 
-          <ion-item lines="none">
-            <ion-label position="floating">E-mail</ion-label>
-            <ion-input></ion-input>
-          </ion-item>
+    <ion-item lines="none">
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
 
-          <ion-item lines="none">
-            <ion-label position="floating">Location</ion-label>
-            <ion-input type="text"></ion-input>
-          </ion-item>
-        </ion-card>
+    <ion-item lines="none">
+      <ion-label position="floating">Location</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-card>
 
-        <ion-card>
-          <!-- <ion-radio-group value="gender">
+  <ion-card>
+    <!-- <ion-radio-group value="gender">
           <ion-list-header>
             <ion-label class="gen">Gender</ion-label>
           </ion-list-header>
@@ -91,58 +87,58 @@
             <ion-radio slot="end" color="light" value="male"></ion-radio>
           </ion-item>
         </ion-radio-group> -->
-          <div class="container">Gender : &nbsp;&nbsp;
-            <ion-item lines="none">
+    <div class="container">Gender : &nbsp;&nbsp;
+      <ion-item lines="none">
 
-              <input type='radio' id='male' name='radio'>
-              <label for='male'>Male</label>
-              <div class="space"></div>
-              <input type='radio' id='female' name='radio'>
-              <label for='female'>Female</label>
+        <input type='radio' id='male' name='radio'>
+        <label for='male'>Male</label>
+        <div class="space"></div>
+        <input type='radio' id='female' name='radio'>
+        <label for='female'>Female</label>
 
-            </ion-item>
-          </div>
-        </ion-card>
+      </ion-item>
+    </div>
+  </ion-card>
 
-        <ion-card>
-          <ion-item lines="none">
-            <ion-label position="floating">Birthdate</ion-label>
-            <ion-datetime></ion-datetime>
-          </ion-item>
-        </ion-card>
+  <ion-card>
+    <ion-item lines="none">
+      <ion-label position="floating">Birthdate</ion-label>
+      <ion-datetime></ion-datetime>
+    </ion-item>
+  </ion-card>
 
-        <ion-card>
-          <ion-item lines="none">
-            <ion-label position="floating">Bio</ion-label>
-            <ion-textarea></ion-textarea>
-          </ion-item>
+  <ion-card>
+    <ion-item lines="none">
+      <ion-label position="floating">Bio</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
 
-        </ion-card>
+  </ion-card>
 
-        <ion-card>
-          <ion-item lines="none">
-            <ion-label position="floating">Password
-            </ion-label>
-            <ion-input type="password"></ion-input>
-          </ion-item>
+  <ion-card>
+    <ion-item lines="none">
+      <ion-label position="floating">Password
+      </ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
 
-          <ion-item lines="none">
-            <ion-label position="floating">Confirm Password
-            </ion-label>
-            <ion-input type="password"></ion-input>
-          </ion-item>
+    <ion-item lines="none">
+      <ion-label position="floating">Confirm Password
+      </ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
 
-        </ion-card>
+  </ion-card>
 
-        <div class="ion-text-end">
-          <!-- <ion-button slot="end" routerLink='../login' class="next-arrow" shape="round" (click)="goToRegister()" fill="outline">
+  <div class="ion-text-end">
+    <!-- <ion-button slot="end" routerLink='../login' class="next-arrow" shape="round" (click)="goToRegister()" fill="outline">
         <ion-icon class="icon-arrow" name="arrow-forward-circle-outline"></ion-icon>
       </ion-button> -->
-          <ion-fab-button slot="end" routerLink='../login' class="next-arrow"
-            shape="round" (click)="goToRegister()" fill="outline">
-            <ion-icon class="icon-arrow" name="arrow-forward-circle-outline"></ion-icon>
-          </ion-fab-button>
+    <ion-fab-button slot="end" routerLink='../login' class="next-arrow"
+      shape="round" (click)="goToRegister()" fill="outline">
+      <ion-icon class="icon-arrow" name="arrow-forward-circle-outline"></ion-icon>
+    </ion-fab-button>
 
-        </div>
+  </div>
 
-      </ion-content>
+</ion-content>

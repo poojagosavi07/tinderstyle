@@ -25,9 +25,6 @@
 
       <ion-card>
 
-        <ion-grid>
-
-
           <ion-item>
             <ion-label position="floating">First Name</ion-label>
             <ion-input></ion-input>
@@ -37,7 +34,6 @@
             <ion-label position="floating">Last Name</ion-label>
             <ion-input></ion-input>
           </ion-item>
-
 
           <ion-item>
             <ion-label position="floating">Contact No.</ion-label>
@@ -53,14 +49,15 @@
             <ion-label position="floating">Location</ion-label>
             <ion-input type="text"></ion-input>
           </ion-item>
-        </ion-grid>
+
+
       </ion-card>
 
       <ion-card>
         <ion-radio-group value="gender">
-          <!-- <ion-list-header>
+          <ion-list-header>
             <ion-label class="head">Gender</ion-label>
-          </ion-list-header> -->
+          </ion-list-header>
           <ion-item lines="none">
             <ion-label>Female</ion-label>
             <ion-radio slot="end" color="danger" value="female"></ion-radio>
@@ -87,7 +84,7 @@
 
       </ion-card>
 
-      <ion-card style="margin-bottom: 10px;">
+      <ion-card >
         <ion-item>
           <ion-label position="floating">Password
           </ion-label>
@@ -111,7 +108,7 @@
         <div class="ion-text-end">
           <ion-button routerLink='../login'
             class="next-arrow" expand="expand" shape="round" (click)="goToRegister()"
-            fill="outline" style="border: 0 !important;--border-width: 0">
+            fill="outline">
             <ion-icon float-right name="arrow-forward-circle-outline"
             ></ion-icon>
           </ion-button>

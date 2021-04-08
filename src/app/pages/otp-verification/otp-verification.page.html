@@ -45,35 +45,23 @@
     </div>
   </div> -->
 
-
- 
+  <ion-label class="otp">Enter OTP here</ion-label>
     <div class="content ion-text-center" >
+     
       <form ng-submit="profile.submitPhone()" name="profile.formTelephone" class="form-otp" no-validate> 
-        <!-- <div class="row"> -->
-            
             <div class="input-code">
                 <input type="text" id="otp-number-input-1" class="otp-number-input"  maxlength="1" ng-change="myFunc(this)" ng-model="myValue1" numbers-only>
-              
                   <input type="text" id="otp-number-input-2" class="otp-number-input" maxlength="1" ng-change="myFunc(this)" ng-model="myValue2" numbers-only>
-              
                <input type="text" id="otp-number-input-3" class="otp-number-input" maxlength="1" ng-change="myFunc(this)" ng-model="myValue3" numbers-only>
-              
                <input type="text" id="otp-number-input-4" class="otp-number-input" maxlength="1" ng-change="myFunc(this)" ng-model="myValue4" numbers-only>
-              
-               <!-- <input type="text" id="otp-number-input-5" class="otp-number-input" tabindex="5" maxlength="1" ng-change="myFunc(this)"  ng-model="myValue5" numbers-only>
-               <input type="text" id="otp-number-input-6" class="otp-number-input" maxlength="1" ng-change="myFunc(this)"  ng-model="myValue6" numbers-only >         -->
             </div>
-        
-        <!-- </div> -->
-        
+     
       </form>
     </div>
-
 
   <div class="center1">
     <ion-button round routerLink='../login' class="btn" fill="outline">Verify</ion-button>
   </div>
-
 
   <!-- <ion-button routerLink='../login' class="btn" fill="outline" expand="block">Verify</ion-button> -->
 </ion-content>

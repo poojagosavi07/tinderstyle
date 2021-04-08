@@ -41,7 +41,7 @@ export class AddPhotosPage implements OnInit {
           previewImage(file);
         }
       }
-      
+
     }
     
     // initialize box-scope
@@ -52,9 +52,7 @@ export class AddPhotosPage implements OnInit {
       initDropEffect(box);
       initImageUpload(box);
     }
-    
-    
-    
+        
     /// drop-effect
     function initDropEffect(box){
       let area, drop, areaWidth, areaHeight, maxDistance, dropWidth, dropHeight, x, y;

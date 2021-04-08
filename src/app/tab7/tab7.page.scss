@@ -110,29 +110,6 @@ ion-card-content{
       }
     }
   }
-
-  .multi-button h2
-  {
-      position: relative;
-      margin: 8px 25px 46px;
-      text-align: center;
-      background-color: #fff;
-      border-radius: 16px;
-      border: none;
-      box-shadow: 9px 9px 16px rgb(163,177,198,0.6),
-                   -9px -9px 16px rgba(255,255,255,0.5);
-      // width: 500px;
-      // height: 90px;
-      font-family: 600;
-      color: rgb(78,78,78);
-      font-family: sans-serif;
-      // line-height: 58px;
-  }
-  
-  .multi-button h2:active:hover{
-      box-shadow:9px 9px 16px rgb(163,177,198,0.6),
-                 -9px -9px 16px rgba(255,255,255,0.5);
-  }
   
 ion-fab-button{
     

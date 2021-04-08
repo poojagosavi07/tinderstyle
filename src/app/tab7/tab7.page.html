@@ -21,11 +21,11 @@
   <sw-card-wrapper #cardWrapper>
     <div class="container" id="container">
       <ion-card class="card" *ngFor="let question of questions; let index=index"
-        swSwipeable [width]="250"
-        [height]="250" [orientation]="'y'" [class.visible]="question.visible"
+        swSwipeable [width]="300"
+        [height]="300" [orientation]="'x'" [class.visible]="question.visible"
         [class.hidden]="!question.visible">
         <img [src]="question.image" [alt]="question.name" style="height:
-          200px;width: 200px;">
+          250px;width: 250px;">
         <h3>{{question.name}} ,{{question.age}} <ion-icon color="success"
             name="checkmark-circle"></ion-icon></h3>
 

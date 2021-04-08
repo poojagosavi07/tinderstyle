@@ -34,7 +34,7 @@ const routes: Routes = [
   },
   {
     path: 'share-my-feeds',
-    loadChildren: () => import('./setting/share-my-feeds/share-my-feeds.module').then( m => m.ShareMyFeedsPageModule)
+    loadChildren: () => import('./share-my-feeds/share-my-feeds.module').then( m => m.ShareMyFeedsPageModule)
   },
   {
     path: 'account-recovery',

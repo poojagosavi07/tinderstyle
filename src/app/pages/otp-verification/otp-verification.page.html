@@ -46,11 +46,11 @@
   </div> -->
 
 
-  <section id="wrapper" ng-app="otp">
-    <div class="content" ng-controller="otpCtrl">
+ 
+    <div class="content ion-text-center" >
       <form ng-submit="profile.submitPhone()" name="profile.formTelephone" class="form-otp" no-validate> 
-        <div class="row">
-            <h1>Code Verification</h1>
+        <!-- <div class="row"> -->
+            
             <div class="input-code">
                 <input type="text" id="otp-number-input-1" class="otp-number-input"  maxlength="1" ng-change="myFunc(this)" ng-model="myValue1" numbers-only>
               
@@ -63,14 +63,12 @@
                <!-- <input type="text" id="otp-number-input-5" class="otp-number-input" tabindex="5" maxlength="1" ng-change="myFunc(this)"  ng-model="myValue5" numbers-only>
                <input type="text" id="otp-number-input-6" class="otp-number-input" maxlength="1" ng-change="myFunc(this)"  ng-model="myValue6" numbers-only >         -->
             </div>
-          <input type="text" name="otp-number" id="otp-number" class="" maxlength="6" >
-        </div>
+        
+        <!-- </div> -->
         
       </form>
     </div>
-</section>
 
-Resources
 
   <div class="center1">
     <ion-button round routerLink='../login' class="btn" fill="outline">Verify</ion-button>

@@ -81,24 +81,15 @@ ion-content,ion-item{
 
 .content{
  
+    text-align: center;
     .form-otp{
-      background-color:pink;
-      height:650px;
-      width:650px;
+    //   background-color:#2A2A2A;
+    //   height:350px;
+    //   width:450px;
       text-align: center;
+      font-size: 30px;
       box-sizing: border-box;
-      
-      hr{
-        width:50%;
-      }
-      
-      h1{
-        color:#ffffff;
-        margin-top:80px;
-        font-weight:700;
-        text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.2);
-      }
-      
+  
     }
     
     .input-code{
@@ -113,8 +104,8 @@ ion-content,ion-item{
     .otp-number-input{
       background-color:transparent;
       text-align: center;
-      line-height: 80px;
-      font-size: 50px;
+    //   line-height: 80px;
+    //   font-size: 50px;
       outline: none;
       width: 10%;
       transition: all .2s ease-in-out;

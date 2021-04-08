@@ -31,7 +31,7 @@
       <ion-card-subtitle>Birthdate</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
-      <ion-item>
+      <ion-item lines="none">
         <ion-datetime displayFormat="DD/MM/YYYY" placeholder="DOB"></ion-datetime>
       </ion-item>
     </ion-card-content>
@@ -42,7 +42,7 @@
       <ion-card-subtitle>Location</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
-      <ion-item>
+      <ion-item lines="none">
         <ion-input type="text"></ion-input>
       </ion-item>
     </ion-card-content>
@@ -58,8 +58,8 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-button color="danger" routerLink='../login' class="next-arrow"
-    expand="expand" shape="round" fill="outline">
-    <ion-icon float-right name="arrow-forward-circle-outline"></ion-icon>
+  <ion-button routerLink='/tabs/tab6' class="next-arrow" size="small"
+    fill="clear">save
+    <!-- <ion-icon float-right name="arrow-forward-circle-outline"></ion-icon> -->
   </ion-button>
 </ion-content>

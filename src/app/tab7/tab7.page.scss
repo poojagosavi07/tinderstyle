@@ -66,7 +66,7 @@ ion-card-content{
     display: flex;
     align-items: flex-start;
     margin-left: 5%;
-    margin-top: 0;
+    margin-top: -20px;
     justify-content: center;
   }
 
@@ -134,7 +134,7 @@ ion-card-content{
                  -9px -9px 16px rgba(255,255,255,0.5);
   }
   
-ion-button{
+ion-fab-button{
     
   box-shadow:  -2px -2px 6px rgba(255, 255, 255, 0.2),  2px 2px 6px rgba(0, 0, 0, 0.8);
   background: #2A2A2A;

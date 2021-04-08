@@ -162,9 +162,9 @@ text-align: center;
       color: #cecece;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
       box-shadow:  -2px -2px 6px rgba(255, 255, 255, 0.2),  2px 2px 6px rgba(0, 0, 0, 0.8);
-  --background: linear-gradient(#2A2A2A 0%,#2A2A2A 100%);
+  // --background: linear-gradient(#2A2A2A 0%,#2A2A2A 100%);
       font-weight: bold;
-      background-color: #2A2A2A;
+      // background-color: #2A2A2A;
       border: 2px solid #2A2A2A;
       cursor: pointer;
       transition: all 200ms ease;
@@ -172,7 +172,7 @@ text-align: center;
     
     input[type="radio"]:checked + label {
       color: #585a5c;
-      background-color: #2A2A2A;
+      // background-color: #2A2A2A;
     }
     
     input[type="radio"] + label {

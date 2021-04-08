@@ -85,17 +85,42 @@
 
       </ion-item>
     </div> -->
+    <p>
+      <ion-row>
+        <ion-col size="3">
+          <ion-label class="ion-text-center">Gender : &nbsp;&nbsp;</ion-label>
+        </ion-col>
 
-    <fieldset>
-    
-      <div class="toggle">Gender &nbsp;
-        <input type="radio" name="sizeBy" value="weight" id="sizeWeight" checked="checked" />
-        <label for="sizeWeight">It's pretty, pretty, pretty, pretty good</label>
-        <input type="radio" name="sizeBy" value="dimensions" id="sizeDimensions" />
-        <label for="sizeDimensions">100% yes</label>
-      </div>
-   
-    </fieldset>
+        <div class="custom-radios">
+         
+          <ion-col size="1">
+            <div>
+              <input type="radio" id="color-1" name="color" value="color-1">
+              <label for="color-1">Male : &nbsp;
+                <span>
+                  <img
+                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                    alt="Checked Icon" />
+                </span>
+              </label>
+            </div>
+          </ion-col>
+
+          <ion-col>
+            <div>
+              <input type="radio" id="color-2" name="color" value="color-2">
+              <label for="color-2">Female : &nbsp;
+                <span>
+                  <img
+                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                    alt="Checked Icon" />
+                </span>
+              </label>
+            </div>
+          </ion-col>
+        </div>
+      </ion-row>
+    </p>
 
   </ion-card>
 

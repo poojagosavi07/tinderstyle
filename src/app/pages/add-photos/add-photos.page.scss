@@ -101,7 +101,7 @@
         width: 130px;
       }
 
-      /* --------------------------- -*/
+/* ----------------------------------------------------------------- -*/
 
       *{
         font-family: 'Poppins', sans-serif;
@@ -111,7 +111,6 @@
       
       ion-content{
         --background: #2A2A2A;
-        // --background: #2A2A2A;
       }
       
       ion-item{
@@ -127,23 +126,19 @@
         box-shadow:  -2px -2px 6px rgba(255, 255, 255, 0.2),  2px 2px 6px rgba(0, 0, 0, 0.8);
         --background: linear-gradient(#2A2A2A 0%,#2A2A2A 100%);
         --background: #2A2A2A;
-        
       }
 
-      /*-----image upload----------*/
+/* ------------------------image upload----------*/
 
 // variables
 $base-color: #cecece;
 $base-font: 'Raleway', sans-serif;
 
 .wrapper{
-  // display: flex;
   flex-direction:column;
-  // flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  // height: 300px;
-  // width: 100px;
+  text-align: center;
 }
 
 .box {
@@ -152,7 +147,7 @@ $base-font: 'Raleway', sans-serif;
   height: 50px;
   // margin: 10px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   overflow: hidden;
@@ -161,13 +156,13 @@ $base-font: 'Raleway', sans-serif;
 .upload-options {
   position: relative;
   height: 35px;
-  background-color: $base-color;
+  background-color: #2A2A2A;
   cursor: pointer;
   overflow: hidden;
   text-align: center;
   transition: background-color ease-in-out 150ms;
   &:hover {
-    background-color: lighten($base-color, 10%);
+    background-color: lighten(#2A2A2A, 10%);
   }
   & input {
     // width: 0.1px;
@@ -187,12 +182,13 @@ $base-font: 'Raleway', sans-serif;
     white-space: nowrap;
     cursor: pointer;
     overflow: hidden;
+
     &::after {
       content: 'Add'; 
      font-weight: bold;
       position: absolute;
      font-size: 17px;
-      color: #2A2A2A;
+      color: #CECECE;
       // top: calc(50% - 2.5rem);
       left: calc(50% - 1.25rem);
       z-index: 0;
@@ -213,7 +209,6 @@ $base-font: 'Raleway', sans-serif;
   }
 }
 
-
 .js--image-preview {
   height: 100px;  /* main image height*/
   width: 100px;
@@ -225,13 +220,8 @@ $base-font: 'Raleway', sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
   &::after {
-    // content: "photo_size_select_actual"; 
-   
     position: relative;
-    // font-size: 4.5em;
     color: rgba(230, 230, 230, 1);
-    // top: calc(50% - 3rem);
-    // left: calc(50% - 2.25rem);
     z-index: 0;
   }
   &.js--no-default::after {
@@ -244,7 +234,6 @@ $base-font: 'Raleway', sans-serif;
 
 i.material-icons {
   transition: color 100ms ease-in-out;
-  // font-size: 2.25em;
   line-height: 55px;
   color: white;
   display: block;

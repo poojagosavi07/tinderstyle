@@ -1,0 +1,28 @@
+-------------------- Auto-Git Log --------------------
+		Thu Apr 08 2021 13:13:19 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/pages/pages-routing.module.ts
+* src/app/pages/register/register.page.scss
+* src/app/pages/setting/setting.page.html
+* src/app/pages/setting/setting.page.scss
+* src/app/tab7/tab7.page.html
+* src/app/tab7/tab7.page.scss
+* src/app/tab7/tab7.page.ts
+
+
+Created files:
+* .autogit/logs/log-8-3-2021-12-43-4.txt
+
+
+Deleted files:
+
+
+Renamed files:
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]

@@ -55,12 +55,7 @@
         }
       }
 
-      .lbl {
-        // --handle-spacing: 0px;
-        --handle-height: 100%;
-        --handle-box-shadow: 4px 0 2px 0 #f53d3d;
      
-      }
 
 /* -------------toggle button css----------------------*/
 
@@ -70,7 +65,7 @@
         visibility: hidden;
       }
       
-      label {
+      .lbl {
         cursor: pointer;
         text-indent: -9999px;
         width: 50px;
@@ -81,7 +76,7 @@
         position: relative;
       }
       
-      label:after {
+      .lbl:after {
         content: '';
         position: absolute;
         top: 5px;
@@ -93,25 +88,17 @@
         transition: 0.3s;
       }
       
-      input:checked + label {
+      input:checked + .lbl {
         background: #cecece;
       }
       
-      input:checked + label:after {
+      input:checked + .lbl:after {
         left: calc(100% - 5px);
         transform: translateX(-100%);
       }
       
-      label:active:after {
+      .lbl:active:after {
         width: 130px;
-      }
-      
-      // centering
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
       }
 
       /* --------------------------- -*/
@@ -144,135 +131,84 @@
       }
 
       /*-----image upload----------*/
-
-// variables
-$base-color: #cecece;
-$base-font: 'Raleway', sans-serif;
-
-.wrapper{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.box {
-  display: block;
-  min-width: 300px;
-  height: 300px;
-  margin: 10px;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  overflow: hidden;
-}
-
-.upload-options {
-  position: relative;
-  height: 75px;
-  background-color: $base-color;
-  cursor: pointer;
-  overflow: hidden;
-  text-align: center;
-  transition: background-color ease-in-out 150ms;
-  &:hover {
-    background-color: lighten($base-color, 10%);
-  }
-  & input {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-  }
-  & label {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    font-weight: 400;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    cursor: pointer;
-    overflow: hidden;
-    &::after {
-      content: 'add'; 
-      font-family: 'Material Icons';
-      position: absolute;
-      font-size: 2.5rem;
-      color: rgba(230, 230, 230, 1);
-      top: calc(50% - 2.5rem);
-      left: calc(50% - 1.25rem);
-      z-index: 0;
-    }
-    & span {
-      display: inline-block;
-      width: 50%;
-      height: 100%;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-      vertical-align: middle;
-      text-align: center;
-      &:hover i.material-icons {
-        color: lightgray;        
+      .codepen--center{
+      overflow: hidden;}
+      
+    
+    .dz{
+      &-progress
+        display: block
+        position: absolute
+        bottom: 5px
+        left: 5px
+        right: 5px
+      &-upload
+      {
+        border-radius: 3px
+        height: 5px
+        background: #bce29e
+        display: block
+        clear: both
+        &[style="width: 100%;"]
+          display: none
       }
+      &-error-message
+      &-filename,
+      &-size,
+      &-success-mark,
+      &-error-mark{
+        display: none;}
+    
+    .dz-complete.dz-success .dz-success-mark,
+    .dz-complete.dz-error .dz-error-mark
+    {
+      display: block;
+      position: absolute;
+      right: 5px;
+      bottom: 0px;
+      text-shadow: 1px 1px white;
     }
-  }
-}
+    .dz-error .dz-error-mark
+      {
+        color: red;}
 
-
-.js--image-preview {
-  height: 225px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  // background-image: url('');
-  background-color: white;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  &::after {
-    content: "photo_size_select_actual"; 
-    font-family: 'Material Icons';
-    position: relative;
-    font-size: 4.5em;
-    color: rgba(230, 230, 230, 1);
-    top: calc(50% - 3rem);
-    left: calc(50% - 2.25rem);
-    z-index: 0;
-  }
-  &.js--no-default::after {
-    display: none;
-  }
-  &:nth-child(2) {
-    background-image: url('http://bastianandre.at/giphy.gif');
-  }
-}
-
-i.material-icons {
-  transition: color 100ms ease-in-out;
-  font-size: 2.25em;
-  line-height: 55px;
-  color: white;
-  display: block;
-}
-
-.drop {
-  display: block;
-  position: absolute;
-  background: transparentize($base-color, .8);
-  border-radius: 100%;
-  transform:scale(0);
-}
-
-.animate {
-  animation: ripple 0.4s linear;
-}
-
-@keyframes ripple {
-    100% {opacity: 0; transform: scale(2.5);}
-}
+    .dz-success .dz-success-mark
+      {color: green;}
+    
+    .shubox--form
+      {
+        padding: 3rem;
+      text-align: left;
+      }
+    
+    .shubox--upload-target
+      {margin-right: 1rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+      float: left;
+      text-align: center;
+      width: 4rem;
+      height: 4rem;
+      border: dashed 3px gray;
+      cursor: pointer;
+      &:hover{
+        border-color: silver;}
+      &:before{
+        content: 'Drag && Drop || Click'
+        font-size: .6rem
+        color: silver
+        display: block
+        font-family: courier
+        margin-top: .4rem
+        line-height: 1rem
+      }}
+    .shubox--upload-preview
+    {}
+      overflow: hidden
+      
+      & > div
+        display: inline-block
+        position: relative
+        width: 4rem
+        height: 4rem
+        margin-right: 1rem

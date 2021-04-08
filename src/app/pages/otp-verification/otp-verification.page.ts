@@ -10,6 +10,8 @@ export class OtpVerificationPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
+

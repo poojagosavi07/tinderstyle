@@ -11,9 +11,8 @@
 
 <ion-content padding>
 
-  <ion-grid>
+  <!-- <ion-grid>
     <ion-row>
-
       <ion-col>
       <div class="card-avatar">
         <div class="img-wrapper">
@@ -79,27 +78,54 @@
   
       </ion-col>
     </ion-row>
-  </ion-grid>
+  </ion-grid> -->
   
-  <ion-grid>
-
-   
+  <!-- <ion-grid>
       <ion-row>
         <ion-col>
           <ion-card class="card">
             <ion-button color="light">
-              <!-- <img src="./../../../assets/img/add1.png"> -->
               <ion-icon name="add"></ion-icon>
             </ion-button>
           </ion-card>
         </ion-col>
       </ion-row>
   
-  </ion-grid>
+  </ion-grid> -->
+
+  <div class="wrapper">
+    <div class="box">
+      <div class="js--image-preview"></div>
+      <div class="upload-options">
+        <label>
+          <input type="file" class="image-upload" accept="image/*" />
+        </label>
+      </div>
+    </div>
+  
+    <div class="box">
+      <div class="js--image-preview"></div>
+      <div class="upload-options">
+        <label>
+          <input type="file" class="image-upload" accept="image/*" />
+        </label>
+      </div>
+    </div>
+  
+    <div class="box">
+      <div class="js--image-preview"></div>
+      <div class="upload-options">
+        <label>
+          <input type="file" class="image-upload" accept="image/*" />
+        </label>
+      </div>
+    </div>
+  </div>
+  
   <ion-card>
     <ion-item lines="none">
       <ion-label>Smart Photos</ion-label>
-      <ion-toggle class="lbl" color="danger" slot="end"></ion-toggle>
+      <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
     </ion-item>
   </ion-card>
 

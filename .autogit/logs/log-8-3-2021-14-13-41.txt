@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Thu Apr 08 2021 14:13:41 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/pages/edit-profile/edit-profile.page.html
+* src/app/pages/edit-profile/edit-profile.page.scss
+* src/app/pages/setting/setting.page.html
+* src/app/pages/setting/setting.page.scss
+
+
+Created files:
+* .autogit/logs/log-8-3-2021-13-43-25.txt
+
+
+Deleted files:
+
+
+Renamed files:

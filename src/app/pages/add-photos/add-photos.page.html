@@ -101,10 +101,6 @@
           <div class="js--image-preview"></div>
           <div class="upload-options">
             <label>
-              <!-- <ion-button>
-                <ion-icon name="trash-outline"></ion-icon>
-              </ion-button>
-               -->
               <input type="file" class="image-upload" accept="image/*" >
             </label>
           </div>
@@ -135,11 +131,28 @@
     </ion-row>    
   </div>
 
-  <ion-card>
+  <ion-card class="card">
     <ion-item lines="none">
       <ion-label>Smart Photos</ion-label>
-      <input type="checkbox" id="switch" /><label class="lbl" for="switch">Toggle</label>
+      <!-- <input type="checkbox" id="switch" /><label class="lbl" for="switch">Toggle</label> -->
+      <div class="toggle-radio">
+        <input type="radio" name="rdo" id="yes" checked>
+        <input type="radio" name="rdo" id="no">
+        <div class="switch">
+          <label for="yes">Yes</label>
+          <label for="no">No</label>
+          <span></span>
+        </div>
+      </div>
     </ion-item>
   </ion-card>
 
+  <div class="ion-text-center">
+    <ion-button routerLink='/tabs/tab6' fill="outline" shape="round" size="default">Save
+    </ion-button>
+  </div>
+
+  
+  
+ 
 </ion-content>

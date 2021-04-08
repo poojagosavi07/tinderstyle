@@ -72,21 +72,31 @@
 
   <ion-card>
 
-    <div class="container ion-text-left">Gender : &nbsp;&nbsp;
+    <!-- <div class="container ion-text-left">Gender : &nbsp;&nbsp;
       <ion-item lines="none">
         <ion-row>
-         
             <input type='radio' id='male' name='radio' class="blue">
             <label for='male'>Male</label>
           
             <input type='radio' id='female' name='radio' class="pink">
             <label for='female'>Female</label>
-         
         </ion-row>
 
 
       </ion-item>
-    </div>
+    </div> -->
+
+    <fieldset>
+    
+      <div class="toggle">Gender &nbsp;
+        <input type="radio" name="sizeBy" value="weight" id="sizeWeight" checked="checked" />
+        <label for="sizeWeight">It's pretty, pretty, pretty, pretty good</label>
+        <input type="radio" name="sizeBy" value="dimensions" id="sizeDimensions" />
+        <label for="sizeDimensions">100% yes</label>
+      </div>
+   
+    </fieldset>
+
   </ion-card>
 
   <ion-card>

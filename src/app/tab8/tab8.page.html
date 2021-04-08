@@ -45,9 +45,14 @@
         <div class="feed-btn-wrapper">
           <ion-buttons class="ion-float-left">
   
-            <ion-button>
-              <ion-icon name="heart-outline" color="danger"></ion-icon>
-            </ion-button>
+            <div class="icon">
+              <input type="checkbox" id="like" class="hide">
+              <label for="like" class="btn btn-like">
+                <svg width="50" height="50">
+                  <use xlink:href="#heart" />
+                  </svg>
+                </label>
+              </div>
            
             <ion-button>
               <ion-icon name="chatbubbles-outline" color="danger"></ion-icon>
@@ -58,9 +63,16 @@
           </ion-buttons>
 
           <ion-buttons class="ion-float-right">
-            <ion-button>
-              <ion-icon name="bookmark-outline" color="danger"></ion-icon>
-            </ion-button>
+            
+            <div class="icon">
+              <input type="checkbox" id="bookmark" class="hide">
+              <label for="bookmark" class="btn btn-bookmark">
+                <svg width="50" height="50">
+                  <use xlink:href="#icon-bookmark" />
+                  </svg>
+                </label>
+              </div>
+
           </ion-buttons>
         </div>
       </div>

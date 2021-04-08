@@ -8,6 +8,7 @@
           <h6 style="text-align: center" class="user-name"><b>Jeniffer, 19 yrs</b></h6>
           <p style="text-align: center" class="user-city"><ion-icon
               name="location-outline"></ion-icon> Paris (France) </p>
+
         </div>
       </ion-col>
     </ion-row>
@@ -20,8 +21,7 @@
       </ion-col>
 
       <ion-col>
-        <ion-fab-button routerLink='/pages/add-photos' style="margin: 0 auto;"
-        >
+        <ion-fab-button routerLink='/pages/add-photos' style="margin: 0 auto;">
           <ion-icon color="light" name="camera-outline"></ion-icon>
         </ion-fab-button>
       </ion-col>
@@ -66,4 +66,36 @@
    </ion-card> -->
   </div>
 
-</ion-content>
+  <div class="icon">
+    <input type="checkbox" id="like" class="hide">
+    <label for="like" class="btn btn-like">
+      <svg width="50" height="50">
+        <use xlink:href="#heart" />
+        </svg>
+      </label>
+    </div>
+
+    <div class="icon">
+      <input type="checkbox" id="bookmark" class="hide">
+      <label for="bookmark" class="btn btn-bookmark">
+        <svg width="50" height="50">
+          <use xlink:href="#icon-bookmark" />
+          </svg>
+        </label>
+      </div>
+
+      <svg class="hide">
+        <symbol viewBox="0 0 24 24" stroke="currentColor"
+          fill="var(--color-svg)" id="heart">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"
+            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0
+            00-6.364-6.364L12
+            7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></symbol>
+
+        <symbol fill="var(--color-svg)" viewBox="0 0 24 24"
+          stroke="currentColor" id="icon-bookmark">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"
+            d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></symbol>
+      </svg>
+
+    </ion-content>

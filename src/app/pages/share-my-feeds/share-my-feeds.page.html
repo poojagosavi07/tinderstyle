@@ -3,7 +3,7 @@
   <ion-toolbar>
     <ion-title>Share My Feed</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="home" routerLink="/tabs/tab6"></ion-back-button>
+      <ion-back-button defaultHref="home" routerLink="/tabs/tab"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -13,45 +13,45 @@
   <ion-card>
     <ion-item lines="none">
       <ion-label>Share my Feed</ion-label>
-      <ion-toggle class="lbl" color="danger" slot="end"></ion-toggle>
+      <!-- <ion-toggle class="lbl" color="dark" slot="end"></ion-toggle> -->
+      <div class="toggler">
+        <input type="checkbox" id="switch" />
+        <label for="switch">Toggle</label>
+      </div>
+
     </ion-item>
 
   </ion-card>
 
-  <ion-card>
+  <ion-card id="card">
 
-    <div class="container">
-
-      <div class="switch-holder">
-        <div class="switch-label">
-          <i class="fas fa-map-marker-alt"></i><span>Photos</span>
-        </div>
-        <div class="switch-toggle">
-          <input type="checkbox" id="photos">
-          <label for="photos"></label>
-        </div>
+    <ion-item lines="none">
+      <ion-label>Photos</ion-label>
+      <!-- <ion-toggle class="lbl" color="dark" name="bio" slot="end"></ion-toggle> -->
+      <div class="toggler">
+        <input type="checkbox" id="switch1" />
+        <label for="switch1">Toggle</label>
       </div>
+    </ion-item>
 
-      <div class="switch-holder">
-        <div class="switch-label">
-          <i class="fas fa-map-marker-alt"></i><span>Bio</span>
-        </div>
-        <div class="switch-toggle">
-          <input type="checkbox" id="bio">
-          <label for="bio"></label>
-        </div>
+    <ion-item lines="none">
+      <ion-label>Bio</ion-label>
+      <!-- <ion-toggle class="lbl" color="dark" name="bio" slot="end"></ion-toggle> -->
+      <div class="toggler">
+        <input type="checkbox" id="switch2" />
+        <label for="switch2">Toggle</label>
       </div>
+    </ion-item>
 
-      <div class="switch-holder">
-        <div class="switch-label">
-          <i class="fas fa-map-marker-alt"></i><span>Work</span>
-        </div>
-        <div class="switch-toggle">
-          <input type="checkbox" id="work">
-          <label for="work"></label>
-        </div>
+    <ion-item lines="none">
+      <ion-label class="lbl">Work</ion-label>
+      <!-- <ion-toggle class="lbl" color="dark" name="work" slot="end"></ion-toggle> -->
+      <div class="toggler">
+        <input type="checkbox" id="switch3" />
+        <label for="switch3">Toggle</label>
       </div>
-    </div>
+    </ion-item>
+
 
   </ion-card>
 </ion-content>

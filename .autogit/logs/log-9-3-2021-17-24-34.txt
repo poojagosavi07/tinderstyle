@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Fri Apr 09 2021 17:24:34 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/pages/otp-verification/otp-verification.page.scss
+
+
+Created files:
+* .autogit/logs/log-9-3-2021-16-49-52.txt
+
+
+Deleted files:
+
+
+Renamed files:

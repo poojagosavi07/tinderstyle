@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Wed Apr 14 2021 11:54:33 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/pages/setting/setting.page.html
+* src/app/pages/share-my-feeds/share-my-feeds.page.html
+* src/app/pages/share-my-feeds/share-my-feeds.page.scss
+
+
+Created files:
+* .autogit/logs/log-9-3-2021-18-24-54.txt
+
+
+Deleted files:
+
+
+Renamed files:

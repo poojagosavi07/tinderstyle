@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Thu Apr 22 2021 14:57:54 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/pages/add-photos/add-photos.page.scss
+* src/app/pages/share-my-feeds/share-my-feeds.page.html
+
+
+Created files:
+* .autogit/logs/log-14-3-2021-17-57-54.txt
+
+
+Deleted files:
+
+
+Renamed files:
